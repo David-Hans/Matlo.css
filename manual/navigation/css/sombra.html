@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+
+	<!-- Import Google Icon Font -->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Import matlo.css -->
+	<link href="../../../css/matlo.css" rel="stylesheet">
+	<!-- Import prettify.css -->
+	<link href="../../css/prettify.css" rel="stylesheet">
+
+	<link rel="icon" href="../../media/images/favicon-32x32.png" sizes="32x32"/>
+
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+	<meta name="robots" content=""/>
+	<meta name="author" content=""/>
+
+	<!-- Título -->
+	<title>Sombra | Matlo.css</title>
+</head>
+
+<body>
+
+	<header class="padd-on-large-300">
+		<!-- Header -->
+		<nav class="top-nav">
+			<div class="container">
+				<div class="nav-wrapper">
+					<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+					<!-- Título -->
+					<a class="page-title brand-logo">Sombra</a>
+				</div>
+			</div>
+		</nav>
+		<!-- SideNavBar -->
+		<ul id="slide-out" class="side-nav fixed">
+			<li class="logo">
+				<img src="../../media/images/favicon-100x100.png" alt="Matlo.css">
+			</li>
+			<li><a class="waves-effect" href="../comenzar.html">Comenzar</a></li>
+			<li>
+				<ul class="collapsible">
+					<li>
+						<div class="collapsible-header active no-padding"><a class="waves-effect">CSS</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../css/grid.html">Grid</a></li>
+								<li><a class="waves-effect" href="../css/contenido.html">Control de contenido</a></li>
+								<li><a class="waves-effect" href="../css/media.html">Media</a></li>
+								<li class="active"><a class="waves-effect" href="../css/sombra.html">Sombra</a></li>
+								<li><a class="waves-effect" href="../css/alertas.html">Alertas</a></li>
+								<li><a class="waves-effect" href="../css/tablas.html">Tablas</a></li>
+								<li><a class="waves-effect" href="../css/colores.html">Colores</a></li>
+								<li><a class="waves-effect" href="../css/tipografia.html">Tipografía</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header no-padding"><a class="waves-effect">Componentes</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../componentes/botones.html">Botones</a></li>
+								<li><a class="waves-effect" href="../componentes/avance.html">Barras de avance</a></li>
+								<li><a class="waves-effect" href="../componentes/cartas.html">Cartas</a></li>
+								<li><a class="waves-effect" href="../componentes/pie.html">Pie de página</a></li>
+								<li><a class="waves-effect" href="../componentes/forms.html">Forms</a></li>
+								<li><a class="waves-effect" href="../componentes/iconos.html">Íconos</a></li>
+								<li><a class="waves-effect" href="../componentes/navegacion.html">Barra de navegación</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header no-padding"><a class="waves-effect">JavaScript</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../javascript/carrusel.html">Carrusel</a></li>
+								<li><a class="waves-effect" href="../javascript/plegables.html">Plegables</a></li>
+								<li><a class="waves-effect" href="../javascript/tooltips.html">Tooltips</a></li>
+								<li><a class="waves-effect" href="../javascript/dropdown.html">Dropdown</a></li>
+								<li><a class="waves-effect" href="../javascript/media.html">Media</a></li>
+								<li><a class="waves-effect" href="../javascript/modal.html">Modal</a></li>
+								<li><a class="waves-effect" href="../javascript/pushpinscrollspy.html">Pushpin y Scrollspy</a></li>
+								<li><a class="waves-effect" href="../javascript/lateral.html">Barra navegadora lateral</a></li>
+								<li><a class="waves-effect" href="../javascript/waves.html">Waves</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li><a class="waves-effect" href="../recursos.html">Recursos</a></li>
+		</ul>
+		
+	</header>
+
+	<main class="padd-on-large-300">
+		<!-- Content -->
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m9 l10">
+					<p class="caption col s12">En Material Design, todo debiera tener una profundidad en el plano z (z-depth), que determine que tan elevado o cerca de la página el elemento se encuentra</p>
+
+					<div id="sombras" class="section scrollspy">
+						<h3 class="header">Sombras</h3>
+						<p>Puedes aplicar un efecto de sombra fácilmente agregando la clase <code class="prettyprint lang-html">z-depth-2</code> a cualquier elemento.<br><code class="prettyprint lang-html">z-depth-0</code> puede ser usado para eliminar la sombra de elementos que la tengan por defecto.</p>
+
+						<div class="row">
+							<div class="col s12 m2 offset-m1">
+								<p class="z-depth-1 grid-example" style="border:0;">1</p>
+							</div>
+							<div class="col s12 m2">
+								<p class="z-depth-2 grid-example" style="border:0;">2</p>
+							</div>
+							<div class="col s12 m2">
+								<p class="z-depth-3 grid-example" style="border:0;">3</p>
+							</div>
+							<div class="col s12 m2">
+								<p class="z-depth-4 grid-example" style="border:0;">4</p>
+							</div>
+							<div class="col s12 m2">
+								<p class="z-depth-5 grid-example" style="border:0;">5</p>
+							</div>
+						</div>
+
+<pre class="prettyprint">&ltdiv class="row">
+    &ltdiv class="col s12 m2 offset-m1">
+        &ltp class="z-depth-1 grid-example" style="border:0;">1&lt/p>
+    &lt/div>
+
+    &ltdiv class="col s12 m2">
+        &ltp class="z-depth-2 grid-example" style="border:0;">2&lt/p>
+    &lt/div>
+
+    &ltdiv class="col s12 m2">
+        &ltp class="z-depth-3 grid-example" style="border:0;">3&lt/p>
+    &lt/div>
+
+    &ltdiv class="col s12 m2">
+        &ltp class="z-depth-4 grid-example" style="border:0;">4&lt/p>
+    &lt/div>
+    
+    &ltdiv class="col s12 m2">
+        &ltp class="z-depth-5 grid-example" style="border:0;">5&lt/p>
+    &lt/div>
+&lt/div></pre>
+
+					</div>
+
+					<div class="row center">
+						<div class="col s12 m6">
+							<a class="btn waves-effect waves-light" href="media.html">
+								<i class="material-icons left">chevron_left</i>Media
+							</a>
+						</div>
+						<div class="col s12 m6">
+							<a class="btn waves-effect waves-light" href="alertas.html">
+								<i class="material-icons right">chevron_right</i>alertas
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Table of contents -->
+				<div class="col hide-on-small-only m3 l2">
+					<div class="toc-wrapper">
+						<ul class="section table-of-contents">
+							<li><a href="#sombras">Sombras</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer class="page-footer padd-on-large-300">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="footer-text white-text">Matlo.css</h5>
+					<p class="footer-text grey-text text-lighten-4">Matlo.css (Material designed Learning Objects CSS) fue creado - usando Materialize - para el diseño gráfico de Objetos de Aprendizaje, como parte de un Trabajo de Titulación del <a class="footer-link" href="http://www.informatica.usach.cl/">Departamento de Ingeniería Informática</a> de la <a class="footer-link" href="http://www.usach.cl/">Universidad de Santiago de Chile</a>.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<ul>
+						<li><a class="btn github-btn grey lighten-3 black-text" target="_blank" href="https://github.com/David-Hans/Matlo.css">
+							<img class="github-img left" src="../../media/images/GitHub_32_black.png">
+							GitHub
+						</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="https://material.io/">Material Design</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="http://materializecss.com/">Materialize</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="https://github.com/google/code-prettify">Prettify</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© David Hans, 2016.
+				<a class="grey-text text-lighten-4 right" href="#">MIT License</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../../../js/materialize.min.js"></script>
+	<!-- Import prettify -->
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+	<script type="text/javascript" src="../../js/init.js"></script>
+</body>
+</html>

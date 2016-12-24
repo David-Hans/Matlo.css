@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+
+	<!-- Import Google Icon Font -->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Import matlo.css -->
+	<link href="../../../css/matlo.css" rel="stylesheet">
+	<!-- Import prettify.css -->
+	<link href="../../css/prettify.css" rel="stylesheet">
+
+	<link rel="icon" href="../../media/images/favicon-32x32.png" sizes="32x32"/>
+
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+	<meta name="robots" content=""/>
+	<meta name="author" content=""/>
+
+	<!-- Título -->
+	<title>Pushpin y Scrollspy | Matlo.css</title>
+</head>
+
+<body>
+
+	<header class="padd-on-large-300">
+		<!-- Header -->
+		<nav class="top-nav">
+			<div class="container">
+				<div class="nav-wrapper">
+					<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+					<!-- Título -->
+					<a class="page-title brand-logo">Pushpin y Scrollspy</a>
+				</div>
+			</div>
+		</nav>
+		<!-- SideNavBar -->
+		<ul id="slide-out" class="side-nav fixed">
+			<li class="logo">
+				<img src="../../media/images/favicon-100x100.png" alt="Matlo.css">
+			</li>
+			<li><a class="waves-effect" href="../comenzar.html">Comenzar</a></li>
+			<li>
+				<ul class="collapsible">
+					<li>
+						<div class="collapsible-header no-padding"><a class="waves-effect">CSS</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../css/grid.html">Grid</a></li>
+								<li><a class="waves-effect" href="../css/contenido.html">Control de contenido</a></li>
+								<li><a class="waves-effect" href="../css/media.html">Media</a></li>
+								<li><a class="waves-effect" href="../css/sombra.html">Sombra</a></li>
+								<li><a class="waves-effect" href="../css/alertas.html">Alertas</a></li>
+								<li><a class="waves-effect" href="../css/tablas.html">Tablas</a></li>
+								<li><a class="waves-effect" href="../css/colores.html">Colores</a></li>
+								<li><a class="waves-effect" href="../css/tipografia.html">Tipografía</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header no-padding"><a class="waves-effect">Componentes</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../componentes/botones.html">Botones</a></li>
+								<li><a class="waves-effect" href="../componentes/avance.html">Barras de avance</a></li>
+								<li><a class="waves-effect" href="../componentes/cartas.html">Cartas</a></li>
+								<li><a class="waves-effect" href="../componentes/pie.html">Pie de página</a></li>
+								<li><a class="waves-effect" href="../componentes/forms.html">Forms</a></li>
+								<li><a class="waves-effect" href="../componentes/iconos.html">Íconos</a></li>
+								<li><a class="waves-effect" href="../componentes/navegacion.html">Barra de navegación</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header active no-padding"><a class="waves-effect">JavaScript</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../javascript/carrusel.html">Carrusel</a></li>
+								<li><a class="waves-effect" href="../javascript/plegables.html">Plegables</a></li>
+								<li><a class="waves-effect" href="../javascript/tooltips.html">Tooltips</a></li>
+								<li><a class="waves-effect" href="../javascript/dropdown.html">Dropdown</a></li>
+								<li><a class="waves-effect" href="../javascript/media.html">Media</a></li>
+								<li><a class="waves-effect" href="../javascript/modal.html">Modal</a></li>
+								<li class="active"><a class="waves-effect" href="../javascript/pushpinscrollspy.html">Pushpin y Scrollspy</a></li>
+								<li><a class="waves-effect" href="../javascript/lateral.html">Barra navegadora lateral</a></li>
+								<li><a class="waves-effect" href="../javascript/waves.html">Waves</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li><a class="waves-effect" href="../recursos.html">Recursos</a></li>
+		</ul>
+		
+	</header>
+
+	<main class="padd-on-large-300">
+		<!-- Content -->
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m9 l10">
+					<p class="caption col s12"></p>
+
+					<div id="pushpin" class="section scrollspy">
+						<h3 class="header">Pushpin</h3>
+						<p>Es el plugin de posición fija que proveemos, lo puedes usar para dejar elementos de tu página estáticos, durante rangos específicos de avance.</p>
+
+						<p>Hay un ejemplo en vivo en esta página: la tabla de contenidos a la derecha, que se queda con el usuario a medida que éste se mueve por el contenido.</p>
+
+						<br>
+						<h4>Inicialización</h4>
+
+<pre class="prettyprint">$(document).ready(function(){
+    $('.target').pushpin({
+        top: 0,
+        bottom: 1000,
+        offset: 0
+    });
+});</pre>
+
+						<p>Nota: reemplazar <code class="prettyprint">target</code> con la clase del elemento que se desea fijar.</p>
+
+						<br>
+						<h4>Opciones JQuery</h4>
+
+						<table class="highlight">
+							<thead>
+								<tr>
+									<th>Nombre</th>
+									<th>Descripción</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>top</td>
+									<td>Distancia en pixeles desde la parte superior de la página, hasta el punto en que el elemento se queda fijo. (Default: 0)</td>
+								</tr>
+								<tr>
+									<td>bottom</td>
+									<td>Distancia en pixeles desde la parte superior de la página, hasta el punto en que el elemento deja de quedar fijo. (Default: infinito)</td>
+								</tr>
+								<tr>
+									<td>offset</td>
+									<td>El offset desde la parte superior de la página en que el elemento estará fijo. (Default: 0)</td>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+
+					<div id="scrollspy" class="section scrollspy">
+						<h3 class="header">Scrollspy</h3>
+						<p>Plugin de JQuery que trackea ciertos elementos y la posición actual de la pantalla, para realizar cambios acordemente.</p>
+
+						<p>La tabla de contenidos a la derecha también es un ejemplo de esto, como puedes notar, el elemento activo de la tabla cambia a medida que se avanza en el contenido.</p>
+
+						<br>
+						<h4>Estructura</h4>
+						<p>El contenido principal de esta página (contenido + tabla de contenidos) funciona de la siguiente forma.</p>
+
+<pre class="prettyprint">&ltdiv class="row">
+    &ltdiv class="col s12 m9 l10">
+        &ltdiv id="id1" class="section scrollspy">
+            &ltp>Contenido 1&lt/p>
+        &lt/div>
+
+        &ltdiv id="id2" class="section scrollspy">
+            &ltp>Contenido 2&lt/p>
+        &lt/div>
+
+        &ltdiv id="id3" class="section scrollspy">
+            &ltp>Contenido 3&lt/p>
+        &lt/div>
+    &lt/div>
+
+    &ltdiv class="col hide-on-small-only m3 l2">
+        &ltdiv class="toc-wrapper">
+            &ltul class="section table-of-contents">
+                &ltli>&lta href="#id1">Contenido 1&lt/a>&lt/li>
+                &ltli>&lta href="#id2">Contenido 2&lt/a>&lt/li>
+                &ltli>&lta href="#id3">Contenido 3&lt/a>&lt/li>
+            &lt/ul>
+        &lt/div>
+    &lt/div>
+&lt/div></pre>
+
+						<p>Nota 1: para que <b>Scrollspy</b> funcione es importante que los <code class="prettyprint">href</code> de los elementos  de la tabla de contenidos sean iguales a los <code class="prettyprint">id</code> de cada <code class="prettyprint">div</code> de tu contenido.</p>
+
+						<p>Nota 2: para que <b>Pushpin</b> funcione, en este ejemplo específico, tiene que ser inicializado de la siguiente forma (fijando la tabla de contenidos).</p>
+
+<pre class="prettyprint">$(document).ready(function(){
+    $('.toc-wrapper').pushpin({
+        (...)
+    });
+});</pre>
+
+						<br>
+						<h4>Inicialización</h4>
+
+<pre class="prettyprint">$(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+});</pre>
+
+
+						<br>
+						<h4>Opciones JQuery</h4>
+
+						<table class="highlight">
+							<thead>
+								<tr>
+									<th>Nombre</th>
+									<th>Descripción</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>scrollOffset</td>
+									<td>Offset para centrar el contenido cuando se redirige hacia él. (Default: 200)</td>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+
+					<div class="row center">
+						<div class="col s12 m6">
+							<a class="btn waves-effect waves-light" href="modal.html">
+								<i class="material-icons left">chevron_left</i>modal
+							</a>
+						</div>
+						<div class="col s12 m6">
+							<a class="btn waves-effect waves-light" href="lateral.html">
+								<i class="material-icons right">chevron_right</i>barra navegadora lateral
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Table of contents -->
+				<div class="col hide-on-small-only m3 l2">
+					<div class="toc-wrapper">
+						<ul class="section table-of-contents">
+							<li><a href="#pushpin">Pushpin</a></li>
+							<li><a href="#scrollspy">Scrollspy</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer class="page-footer padd-on-large-300">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="footer-text white-text">Matlo.css</h5>
+					<p class="footer-text grey-text text-lighten-4">Matlo.css (Material designed Learning Objects CSS) fue creado - usando Materialize - para el diseño gráfico de Objetos de Aprendizaje, como parte de un Trabajo de Titulación del <a class="footer-link" href="http://www.informatica.usach.cl/">Departamento de Ingeniería Informática</a> de la <a class="footer-link" href="http://www.usach.cl/">Universidad de Santiago de Chile</a>.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<ul>
+						<li><a class="btn github-btn grey lighten-3 black-text" target="_blank" href="https://github.com/David-Hans/Matlo.css">
+							<img class="github-img left" src="../../media/images/GitHub_32_black.png">
+							GitHub
+						</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="https://material.io/">Material Design</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="http://materializecss.com/">Materialize</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="https://github.com/google/code-prettify">Prettify</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© David Hans, 2016.
+				<a class="grey-text text-lighten-4 right" href="#">MIT License</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../../../js/materialize.min.js"></script>
+	<!-- Import prettify -->
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+	<script type="text/javascript" src="../../js/init.js"></script>
+</body>
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+
+	<!-- Import Google Icon Font -->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Import matlo.css -->
+	<link href="../../../css/matlo.css" rel="stylesheet">
+	<!-- Import prettify.css -->
+	<link href="../../css/prettify.css" rel="stylesheet">
+
+	<link rel="icon" href="../../media/images/favicon-32x32.png" sizes="32x32"/>
+
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+	<meta name="robots" content=""/>
+	<meta name="author" content=""/>
+
+	<!-- Título -->
+	<title>Tablas | Matlo.css</title>
+</head>
+
+<body>
+
+	<header class="padd-on-large-300">
+		<!-- Header -->
+		<nav class="top-nav">
+			<div class="container">
+				<div class="nav-wrapper">
+					<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+					<!-- Título -->
+					<a class="page-title brand-logo">Tablas</a>
+				</div>
+			</div>
+		</nav>
+		<!-- SideNavBar -->
+		<ul id="slide-out" class="side-nav fixed">
+			<li class="logo">
+				<img src="../../media/images/favicon-100x100.png" alt="Matlo.css">
+			</li>
+			<li><a class="waves-effect" href="../comenzar.html">Comenzar</a></li>
+			<li>
+				<ul class="collapsible">
+					<li>
+						<div class="collapsible-header active no-padding"><a class="waves-effect">CSS</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../css/grid.html">Grid</a></li>
+								<li><a class="waves-effect" href="../css/contenido.html">Control de contenido</a></li>
+								<li><a class="waves-effect" href="../css/media.html">Media</a></li>
+								<li><a class="waves-effect" href="../css/sombra.html">Sombra</a></li>
+								<li><a class="waves-effect" href="../css/alertas.html">Alertas</a></li>
+								<li class="active"><a class="waves-effect" href="../css/tablas.html">Tablas</a></li>
+								<li><a class="waves-effect" href="../css/colores.html">Colores</a></li>
+								<li><a class="waves-effect" href="../css/tipografia.html">Tipografía</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header no-padding"><a class="waves-effect">Componentes</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../componentes/botones.html">Botones</a></li>
+								<li><a class="waves-effect" href="../componentes/avance.html">Barras de avance</a></li>
+								<li><a class="waves-effect" href="../componentes/cartas.html">Cartas</a></li>
+								<li><a class="waves-effect" href="../componentes/pie.html">Pie de página</a></li>
+								<li><a class="waves-effect" href="../componentes/forms.html">Forms</a></li>
+								<li><a class="waves-effect" href="../componentes/iconos.html">Íconos</a></li>
+								<li><a class="waves-effect" href="../componentes/navegacion.html">Barra de navegación</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header no-padding"><a class="waves-effect">JavaScript</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../javascript/carrusel.html">Carrusel</a></li>
+								<li><a class="waves-effect" href="../javascript/plegables.html">Plegables</a></li>
+								<li><a class="waves-effect" href="../javascript/tooltips.html">Tooltips</a></li>
+								<li><a class="waves-effect" href="../javascript/dropdown.html">Dropdown</a></li>
+								<li><a class="waves-effect" href="../javascript/media.html">Media</a></li>
+								<li><a class="waves-effect" href="../javascript/modal.html">Modal</a></li>
+								<li><a class="waves-effect" href="../javascript/pushpinscrollspy.html">Pushpin y Scrollspy</a></li>
+								<li><a class="waves-effect" href="../javascript/lateral.html">Barra navegadora lateral</a></li>
+								<li><a class="waves-effect" href="../javascript/waves.html">Waves</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li><a class="waves-effect" href="../recursos.html">Recursos</a></li>
+		</ul>
+		
+	</header>
+
+	<main class="padd-on-large-300">
+		<!-- Content -->
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m9 l10">
+					<p class="caption col s12">Proveemos algunas clases de utilidad para ayudar a dar estilo a tus tablas</p>
+
+					<div id="sinb" class="section scrollspy">
+						<h3 class="header">Sin borde</h3>
+						<p>Por defecto, las tablas no tienen borde.</p>
+						<table>
+							<thead>
+								<tr>
+									<th>Nombre</th>
+									<th>Ítem</th>
+									<th>Precio</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Alvin</td>
+									<td>Eclair</td>
+									<td>$0.87</td>
+								</tr>
+								<tr>
+									<td>Alan</td>
+									<td>Jellybean</td>
+									<td>$3.76</td>
+								</tr>
+								<tr>
+									<td>Jonathan</td>
+									<td>Lollipop</td>
+									<td>$7.00</td>
+								</tr>
+							</tbody>
+						</table>
+
+<pre class="prettyprint">&lttable>
+    &ltthead>
+        &lttr>
+        &ltth>Nombre&lt/th>
+        &ltth>Ítem&lt/th>
+        &ltth>Precio&lt/th>
+        &lt/tr>
+    &lt/thead>
+    &lttbody>
+    &lttr>
+        &lttd>Alvin&lt/td>
+        &lttd>Eclair&lt/td>
+        &lttd>$0.87&lt/td>
+    &lt/tr>
+    &lttr>
+        &lttd>Alan&lt/td>
+        &lttd>Jellybean&lt/td>
+        &lttd>$3.76&lt/td>
+    &lt/tr>
+    &lttr>
+        &lttd>Jonathan&lt/td>
+        &lttd>Lollipop&lt/td>
+        &lttd>$7.00&lt/td>
+    &lt/tr>
+    &lt/tbody>
+&lt/table></pre>
+
+					</div>
+
+					<div id="conb" class="section scrollspy">
+						<h3 class="header">Con borde</h3>
+						<p>Sólo hay que agregar la clase <code class="prettyprint">bordered</code> al <code class="prettyprint">tag</code> de la tabla (<code class="prettyprint">&lttable></code>).</p>
+
+						<table class="bordered">
+							<thead>
+								<tr>
+									<th>Nombre</th>
+									<th>Ítem</th>
+									<th>Precio</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Alvin</td>
+									<td>Eclair</td>
+									<td>$0.87</td>
+								</tr>
+								<tr>
+									<td>Alan</td>
+									<td>Jellybean</td>
+									<td>$3.76</td>
+								</tr>
+								<tr>
+									<td>Jonathan</td>
+									<td>Lollipop</td>
+									<td>$7.00</td>
+								</tr>
+								<tr>
+									<td>Shannon</td>
+									<td>KitKat</td>
+									<td>$9.99</td>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+
+					<div id="alt" class="section scrollspy">
+						<h3 class="header">Alternada</h3>
+						<p>Agrega la clase <code class="prettyprint">striped</code> al <code class="prettyprint">tag</code> <code class="prettyprint">&lttable></code>.</p>
+
+						<table class="striped">
+							<thead>
+								<tr>
+									<th>Nombre</th>
+									<th>Ítem</th>
+									<th>Precio</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Alvin</td>
+									<td>Eclair</td>
+									<td>$0.87</td>
+								</tr>
+								<tr>
+									<td>Alan</td>
+									<td>Jellybean</td>
+									<td>$3.76</td>
+								</tr>
+								<tr>
+									<td>Jonathan</td>
+									<td>Lollipop</td>
+									<td>$7.00</td>
+								</tr>
+								<tr>
+									<td>Shannon</td>
+									<td>KitKat</td>
+									<td>$9.99</td>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+
+					<div id="dest" class="section scrollspy">
+						<h3 class="header">Destacada</h3>
+						<p>Agrega la clase <code class="prettyprint">highlight</code> al <code class="prettyprint">tag</code> <code class="prettyprint">&lttable></code>, para que se destaquen filas al pasar el puntero sobre éllas.</p>
+
+						<table class="highlight">
+							<thead>
+								<tr>
+									<th>Nombre</th>
+									<th>Ítem</th>
+									<th>Precio</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Alvin</td>
+									<td>Eclair</td>
+									<td>$0.87</td>
+								</tr>
+								<tr>
+									<td>Alan</td>
+									<td>Jellybean</td>
+									<td>$3.76</td>
+								</tr>
+								<tr>
+									<td>Jonathan</td>
+									<td>Lollipop</td>
+									<td>$7.00</td>
+								</tr>
+								<tr>
+									<td>Shannon</td>
+									<td>KitKat</td>
+									<td>$9.99</td>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+
+					<div id="cent" class="section scrollspy">
+						<h3 class="header">Centrada</h3>
+						<p>Agrega la clase <code class="prettyprint">centered</code> al <code class="prettyprint">tag</code> <code class="prettyprint">&lttable></code>, para centrar los elementos de la tabla.</p>
+
+						<table class="centered">
+							<thead>
+								<tr>
+									<th>Nombre</th>
+									<th>Ítem</th>
+									<th>Precio</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Alvin</td>
+									<td>Eclair</td>
+									<td>$0.87</td>
+								</tr>
+								<tr>
+									<td>Alan</td>
+									<td>Jellybean</td>
+									<td>$3.76</td>
+								</tr>
+								<tr>
+									<td>Jonathan</td>
+									<td>Lollipop</td>
+									<td>$7.00</td>
+								</tr>
+								<tr>
+									<td>Shannon</td>
+									<td>KitKat</td>
+									<td>$9.99</td>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+
+					<div id="resp" class="section scrollspy">
+						<h3 class="header">Responsiva</h3>
+						<p>Agrega la clase <code class="prettyprint">responsive-table</code> al <code class="prettyprint">tag</code> <code class="prettyprint">&lttable></code>, para que la tabla se muestre horizontalmente en pantallas de móvil y tablet.</p>
+
+						<table class="responsive-table">
+							<thead>
+								<tr>
+									<th>Nombre</th>
+									<th>Ítem</th>
+									<th>Precio</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Alvin</td>
+									<td>Eclair</td>
+									<td>$0.87</td>
+								</tr>
+								<tr>
+									<td>Alan</td>
+									<td>Jellybean</td>
+									<td>$3.76</td>
+								</tr>
+								<tr>
+									<td>Jonathan</td>
+									<td>Lollipop</td>
+									<td>$7.00</td>
+								</tr>
+								<tr>
+									<td>Shannon</td>
+									<td>KitKat</td>
+									<td>$9.99</td>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+
+					<div class="row center">
+						<div class="col s12 m6">
+							<a class="btn waves-effect waves-light" href="alertas.html">
+								<i class="material-icons left">chevron_left</i>alertas
+							</a>
+						</div>
+						<div class="col s12 m6">
+							<a class="btn waves-effect waves-light" href="colores.html">
+								<i class="material-icons right">chevron_right</i>colores
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Table of contents -->
+				<div class="col hide-on-small-only m3 l2">
+					<div class="toc-wrapper">
+						<ul class="section table-of-contents">
+							<li><a href="#sinb">Sin borde</a></li>
+							<li><a href="#conb">Con borde</a></li>
+							<li><a href="#alt">Alternada</a></li>
+							<li><a href="#dest">Destacada</a></li>
+							<li><a href="#cent">Centrada</a></li>
+							<li><a href="#resp">Responsiva</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer class="page-footer padd-on-large-300">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="footer-text white-text">Matlo.css</h5>
+					<p class="footer-text grey-text text-lighten-4">Matlo.css (Material designed Learning Objects CSS) fue creado - usando Materialize - para el diseño gráfico de Objetos de Aprendizaje, como parte de un Trabajo de Titulación del <a class="footer-link" href="http://www.informatica.usach.cl/">Departamento de Ingeniería Informática</a> de la <a class="footer-link" href="http://www.usach.cl/">Universidad de Santiago de Chile</a>.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<ul>
+						<li><a class="btn github-btn grey lighten-3 black-text" target="_blank" href="https://github.com/David-Hans/Matlo.css">
+							<img class="github-img left" src="../../media/images/GitHub_32_black.png">
+							GitHub
+						</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="https://material.io/">Material Design</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="http://materializecss.com/">Materialize</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="https://github.com/google/code-prettify">Prettify</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© David Hans, 2016.
+				<a class="grey-text text-lighten-4 right" href="#">MIT License</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../../../js/materialize.min.js"></script>
+	<!-- Import prettify -->
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+	<script type="text/javascript" src="../../js/init.js"></script>
+</body>
+</html>

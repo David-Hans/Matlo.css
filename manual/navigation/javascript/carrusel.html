@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+
+	<!-- Import Google Icon Font -->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Import matlo.css -->
+	<link href="../../../css/matlo.css" rel="stylesheet">
+	<!-- Import prettify.css -->
+	<link href="../../css/prettify.css" rel="stylesheet">
+
+	<link rel="icon" href="../../media/images/favicon-32x32.png" sizes="32x32"/>
+
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+	<meta name="robots" content=""/>
+	<meta name="author" content=""/>
+
+	<!-- Título -->
+	<title>Carrusel | Matlo.css</title>
+</head>
+
+<body>
+
+	<header class="padd-on-large-300">
+		<!-- Header -->
+		<nav class="top-nav">
+			<div class="container">
+				<div class="nav-wrapper">
+					<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+					<!-- Título -->
+					<a class="page-title brand-logo">Carrusel</a>
+				</div>
+			</div>
+		</nav>
+		<!-- SideNavBar -->
+		<ul id="slide-out" class="side-nav fixed">
+			<li class="logo">
+				<img src="../../media/images/favicon-100x100.png" alt="Matlo.css">
+			</li>
+			<li><a class="waves-effect" href="../comenzar.html">Comenzar</a></li>
+			<li>
+				<ul class="collapsible">
+					<li>
+						<div class="collapsible-header no-padding"><a class="waves-effect">CSS</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../css/grid.html">Grid</a></li>
+								<li><a class="waves-effect" href="../css/contenido.html">Control de contenido</a></li>
+								<li><a class="waves-effect" href="../css/media.html">Media</a></li>
+								<li><a class="waves-effect" href="../css/sombra.html">Sombra</a></li>
+								<li><a class="waves-effect" href="../css/alertas.html">Alertas</a></li>
+								<li><a class="waves-effect" href="../css/tablas.html">Tablas</a></li>
+								<li><a class="waves-effect" href="../css/colores.html">Colores</a></li>
+								<li><a class="waves-effect" href="../css/tipografia.html">Tipografía</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header no-padding"><a class="waves-effect">Componentes</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../componentes/botones.html">Botones</a></li>
+								<li><a class="waves-effect" href="../componentes/avance.html">Barras de avance</a></li>
+								<li><a class="waves-effect" href="../componentes/cartas.html">Cartas</a></li>
+								<li><a class="waves-effect" href="../componentes/pie.html">Pie de página</a></li>
+								<li><a class="waves-effect" href="../componentes/forms.html">Forms</a></li>
+								<li><a class="waves-effect" href="../componentes/iconos.html">Íconos</a></li>
+								<li><a class="waves-effect" href="../componentes/navegacion.html">Barra de navegación</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header active no-padding"><a class="waves-effect">JavaScript</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li class="active"><a class="waves-effect" href="../javascript/carrusel.html">Carrusel</a></li>
+								<li><a class="waves-effect" href="../javascript/plegables.html">Plegables</a></li>
+								<li><a class="waves-effect" href="../javascript/tooltips.html">Tooltips</a></li>
+								<li><a class="waves-effect" href="../javascript/dropdown.html">Dropdown</a></li>
+								<li><a class="waves-effect" href="../javascript/media.html">Media</a></li>
+								<li><a class="waves-effect" href="../javascript/modal.html">Modal</a></li>
+								<li><a class="waves-effect" href="../javascript/pushpinscrollspy.html">Pushpin y Scrollspy</a></li>
+								<li><a class="waves-effect" href="../javascript/lateral.html">Barra navegadora lateral</a></li>
+								<li><a class="waves-effect" href="../javascript/waves.html">Waves</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li><a class="waves-effect" href="../recursos.html">Recursos</a></li>
+		</ul>
+		
+	</header>
+
+	<main class="padd-on-large-300">
+		<!-- Content -->
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m9 l10">
+					<p class="caption col s12">El carrusel es un componente robusto y versátil, puede ser una imagen, un slider o un carrusel de ítems.</p>
+
+					<div id="basico" class="section scrollspy">
+						<h3 class="header">Básico</h3>
+
+						<div class="carousel">
+							<a class="carousel-item" href="#!"><img src="../../media/images/250x249.jpg"></a>
+							<a class="carousel-item" href="#!"><img src="../../media/images/249x250.jpg"></a>
+							<a class="carousel-item" href="#!"><img src="../../media/images/250x250.jpg"></a>
+							<a class="carousel-item" href="#!"><img src="../../media/images/250x251.jpg"></a>
+							<a class="carousel-item" href="#!"><img src="../../media/images/251x250.jpg"></a>
+							<a class="carousel-item" href="#!"><img src="../../media/images/249x251.jpg"></a>
+							<a class="carousel-item" href="#!"><img src="../../media/images/251x249.jpg"></a>
+						</div>
+
+<pre class="prettyprint">&ltdiv class="carousel">
+    &lta class="carousel-item" href="#!">&ltimg src="https://unsplash.it/250/249.jpg">&lt/a>
+    &lta class="carousel-item" href="#!">&ltimg src="https://unsplash.it/249/250.jpg">&lt/a>
+    &lta class="carousel-item" href="#!">&ltimg src="https://unsplash.it/250/250.jpg">&lt/a>
+    &lta class="carousel-item" href="#!">&ltimg src="https://unsplash.it/250/251.jpg">&lt/a>
+    &lta class="carousel-item" href="#!">&ltimg src="https://unsplash.it/251/250.jpg">&lt/a>
+    &lta class="carousel-item" href="#!">&ltimg src="https://unsplash.it/249/251.jpg">&lt/a>
+    &lta class="carousel-item" href="#!">&ltimg src="https://unsplash.it/251/249.jpg">&lt/a>
+&lt/div></pre>
+
+						<br>
+						<h4>Inicialización</h4>
+						<p>Requiere incialización JQuery.</p>
+
+<pre class="prettyprint">$(document).ready(function(){
+    $('.carousel').carousel();
+});</pre>
+
+						<br>
+						<h4>Opciones JQuery</h4>
+
+						<table class="highlight">
+							<thead>
+								<tr>
+									<th>Nombre</th>
+									<th>Descripción</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>time_constant</td>
+									<td>Tiempo de transición. (Default: 200)</td>
+								</tr>
+								<tr>
+									<td>dist</td>
+									<td>Zoom de perspectiva. Si es 0, todos los items son del mismo tamaño. (Default: -100)</td>
+								</tr>
+								<tr>
+									<td>shift</td>
+									<td>Espacio del item central. (Default: 0)</td>
+								</tr>
+								<tr>
+									<td>padding</td>
+									<td>Padding entre items no-céntricos. (Default: 0)</td>
+								</tr>
+								<tr>
+									<td>full_width</td>
+									<td>Hacer al carrusel un slider (como la siguiente sección).(Default: false)</td>
+								</tr>
+								<tr>
+									<td>indicators</td>
+									<td>Mostrar indicadores. (Default: false)</td>
+								</tr>
+								<tr>
+									<td>no_wrap</td>
+									<td>No dar la vuelta, al llegar al final. (Default: false)</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<br>
+						<h4>Métodos JQuery</h4>
+						<p>Ofrecemos los siguientes métodos para manipular el carrusel.</p>
+
+<pre class="prettyprint">// Siguiente slide
+$('.carousel').carousel('next');
+$('.carousel').carousel('next', 3); // Avanzar n veces.
+// Slide anterior
+$('.carousel').carousel('prev');
+$('.carousel').carousel('prev', 4); // Retroceder n veces.
+// Ir al slide n
+$('.carousel').carousel('set', 4);</pre>
+
+					</div>
+
+					<div id="slider" class="section scrollspy">
+						<h3 class="header">Slider</h3>
+						<p>El carrusel puede ser de ancho completo.</p>
+
+						<div class="carousel carousel-slider" style="height: 427px;">
+							<a class="carousel-item" href="#!"><img src="../../media/images/800x401(2).jpg"></a>
+							<a class="carousel-item" href="#!"><img src="../../media/images/800x401.jpg"></a>
+							<a class="carousel-item" href="#!"><img src="../../media/images/799x400.jpg"></a>
+							<a class="carousel-item" href="#!"><img src="../../media/images/800x400.jpg"></a>
+						</div>
+
+<pre class="prettyprint">&ltdiv class="carousel carousel-slider" style="height: 427px;">
+    &lta class="carousel-item" href="#!">&ltimg src="https://unsplash.it/799/401.jpg">&lt/a>
+    &lta class="carousel-item" href="#!">&ltimg src="https://unsplash.it/800/401.jpg">&lt/a>
+    &lta class="carousel-item" href="#!">&ltimg src="https://unsplash.it/799/400.jpg">&lt/a>
+    &lta class="carousel-item" href="#!">&ltimg src="https://unsplash.it/800/400.jpg">&lt/a>
+&lt/div></pre>
+<pre class="prettyprint">$('.carousel.carousel-slider').carousel({full_width: true});</pre>
+
+					</div>
+
+					<div id="paneles" class="section scrollspy">
+						<h3 class="header">Paneles</h3>
+						<p>El carrusel no sólo permite el uso imágenes, también puede incluir contenido.<br>Puedes agregar ítems fijos al carrusel con la clase <code class="prettyprint lang-html">carousel-fixed-item</code>.</p>
+
+						<div class="carousel carousel-slider center" data-indicators="true">
+							<div class="carousel-fixed-item center">
+								<a class="btn waves-effect white black-text">Botón</a>
+							</div>
+							<div class="carousel-item red white-text" href="#!">
+								<h2>Primer Panel</h2>
+								<p class="white-text">Este es tu primer panel</p>
+							</div>
+							<div class="carousel-item amber white-text" href="#!">
+								<h2>Segundo Panel</h2>
+								<p class="white-text">Este es tu segundo panel</p>
+							</div>
+							<div class="carousel-item green white-text" href="#!">
+								<h2>Tercer Panel</h2>
+								<p class="white-text">Este es tu tercer panel</p>
+							</div>
+							<div class="carousel-item blue white-text" href="#!">
+								<h2>Cuarto Panel</h2>
+								<p class="white-text">Este es tu cuarto panel</p>
+							</div>
+						</div>
+
+<pre class="prettyprint">&ltdiv class="carousel carousel-slider center" data-indicators="true">
+    &ltdiv class="carousel-fixed-item center">
+        &lta class="btn waves-effect white grey-text darken-text-2">Botón&lt/a>
+    &lt/div>
+    &ltdiv class="carousel-item red white-text" href="#!">
+        &lth2>Primer Panel&lt/h2>
+        &ltp class="white-text">Este es tu primer panel&lt/p>
+    &lt/div>
+    &ltdiv class="carousel-item amber white-text" href="#!">
+        &lth2>Segundo Panel&lt/h2>
+        &ltp class="white-text">Este es tu segundo panel&lt/p>
+    &lt/div>
+    &ltdiv class="carousel-item green white-text" href="#!">
+        &lth2>Tercer Panel&lt/h2>
+        &ltp class="white-text">Este es tu tercer panel&lt/p>
+    &lt/div>
+    &ltdiv class="carousel-item blue white-text" href="#!">
+        &lth2>Cuarto Panel&lt/h2>
+        &ltp class="white-text">Este es tu cuarto panel&lt/p>
+    &lt/div>
+&lt/div></pre>
+
+						<br>
+						<h4>Inicialización</h4>
+
+<pre class="prettyprint">$('.carousel.carousel-slider').carousel({full_width: true});</pre>
+
+					</div>
+
+					<div class="row center">
+						<div class="col s12 m6">
+							<a class="btn waves-effect waves-light" href="../componentes/navegacion.html">
+								<i class="material-icons left">chevron_left</i>barra de navegación
+							</a>
+						</div>
+						<div class="col s12 m6">
+							<a class="btn waves-effect waves-light" href="plegables.html">
+								<i class="material-icons right">chevron_right</i>plegables
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Table of contents -->
+				<div class="col hide-on-small-only m3 l2">
+					<div class="toc-wrapper">
+						<ul class="section table-of-contents">
+							<li><a href="#basico">Básico</a></li>
+							<li><a href="#slider">Slider</a></li>
+							<li><a href="#paneles">Paneles</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer class="page-footer padd-on-large-300">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="footer-text white-text">Matlo.css</h5>
+					<p class="footer-text grey-text text-lighten-4">Matlo.css (Material designed Learning Objects CSS) fue creado - usando Materialize - para el diseño gráfico de Objetos de Aprendizaje, como parte de un Trabajo de Titulación del <a class="footer-link" href="http://www.informatica.usach.cl/">Departamento de Ingeniería Informática</a> de la <a class="footer-link" href="http://www.usach.cl/">Universidad de Santiago de Chile</a>.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<ul>
+						<li><a class="btn github-btn grey lighten-3 black-text" target="_blank" href="https://github.com/David-Hans/Matlo.css">
+							<img class="github-img left" src="../../media/images/GitHub_32_black.png">
+							GitHub
+						</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="https://material.io/">Material Design</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="http://materializecss.com/">Materialize</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="https://github.com/google/code-prettify">Prettify</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© David Hans, 2016.
+				<a class="grey-text text-lighten-4 right" href="#">MIT License</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../../../js/materialize.min.js"></script>
+	<!-- Import prettify -->
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+	<script type="text/javascript" src="../../js/init.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.carousel.carousel-slider').carousel({full_width: true});
+			$('.carousel').carousel();
+		});
+	</script>
+</body>
+</html>

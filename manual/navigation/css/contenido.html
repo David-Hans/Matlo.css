@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+
+	<!-- Import Google Icon Font -->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Import matlo.css -->
+	<link href="../../../css/matlo.css" rel="stylesheet">
+	<!-- Import prettify.css -->
+	<link href="../../css/prettify.css" rel="stylesheet">
+
+	<link rel="icon" href="../../media/images/favicon-32x32.png" sizes="32x32"/>
+
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+	<meta name="robots" content=""/>
+	<meta name="author" content=""/>
+
+	<!-- Título -->
+	<title>Control de contenido | Matlo.css</title>
+</head>
+
+<body>
+
+	<header class="padd-on-large-300">
+		<!-- Header -->
+		<nav class="top-nav">
+			<div class="container">
+				<div class="nav-wrapper">
+					<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+					<!-- Título -->
+					<a class="page-title brand-logo">Control de contenido</a>
+				</div>
+			</div>
+		</nav>
+		<!-- SideNavBar -->
+		<ul id="slide-out" class="side-nav fixed">
+			<li class="logo">
+				<img src="../../media/images/favicon-100x100.png" alt="Matlo.css">
+			</li>
+			<li><a class="waves-effect" href="../comenzar.html">Comenzar</a></li>
+			<li>
+				<ul class="collapsible">
+					<li>
+						<div class="collapsible-header active no-padding"><a class="waves-effect">CSS</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../css/grid.html">Grid</a></li>
+								<li class="active"><a class="waves-effect" href="../css/contenido.html">Control de contenido</a></li>
+								<li><a class="waves-effect" href="../css/media.html">Media</a></li>
+								<li><a class="waves-effect" href="../css/sombra.html">Sombra</a></li>
+								<li><a class="waves-effect" href="../css/alertas.html">Alertas</a></li>
+								<li><a class="waves-effect" href="../css/tablas.html">Tablas</a></li>
+								<li><a class="waves-effect" href="../css/colores.html">Colores</a></li>
+								<li><a class="waves-effect" href="../css/tipografia.html">Tipografía</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header no-padding"><a class="waves-effect">Componentes</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../componentes/botones.html">Botones</a></li>
+								<li><a class="waves-effect" href="../componentes/avance.html">Barras de avance</a></li>
+								<li><a class="waves-effect" href="../componentes/cartas.html">Cartas</a></li>
+								<li><a class="waves-effect" href="../componentes/pie.html">Pie de página</a></li>
+								<li><a class="waves-effect" href="../componentes/forms.html">Forms</a></li>
+								<li><a class="waves-effect" href="../componentes/iconos.html">Íconos</a></li>
+								<li><a class="waves-effect" href="../componentes/navegacion.html">Barra de navegación</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header no-padding"><a class="waves-effect">JavaScript</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../javascript/carrusel.html">Carrusel</a></li>
+								<li><a class="waves-effect" href="../javascript/plegables.html">Plegables</a></li>
+								<li><a class="waves-effect" href="../javascript/tooltips.html">Tooltips</a></li>
+								<li><a class="waves-effect" href="../javascript/dropdown.html">Dropdown</a></li>
+								<li><a class="waves-effect" href="../javascript/media.html">Media</a></li>
+								<li><a class="waves-effect" href="../javascript/modal.html">Modal</a></li>
+								<li><a class="waves-effect" href="../javascript/pushpinscrollspy.html">Pushpin y Scrollspy</a></li>
+								<li><a class="waves-effect" href="../javascript/lateral.html">Barra navegadora lateral</a></li>
+								<li><a class="waves-effect" href="../javascript/waves.html">Waves</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li><a class="waves-effect" href="../recursos.html">Recursos</a></li>
+		</ul>
+		
+	</header>
+
+	<main class="padd-on-large-300">
+		<!-- Content -->
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m9 l10">
+					<p class="caption col s12">Los controladores de contenido permiten manipular el comportamiento de elementos específicos dentro de tu HTML.</p>
+
+					<div id="alinear" class="section scrollspy">
+						<h3 class="header">Alinear</h3>
+						<p>Puedes posicionar elementos horizontalmente con las clases <code class="prettyprint">left-align</code>, <code class="prettyprint">right-align</code> y <code class="prettyprint">center-align</code>.</p>
+
+						<div>
+							<h5 class="flow-text left-align">Alineado a la izquierda</h5>
+						</div>
+						<div>
+							<h5 class="flow-text right-align">Alineado a la derecha</h5>
+						</div>
+						<div>
+							<h5 class="flow-text center-align">Alineado al centro</h5>
+						</div>
+
+<pre class="prettyprint">&ltdiv>
+    &lth5 class="left-align">Alineado a la izquierda&lt/h5>
+&lt/div>
+&ltdiv>
+    &lth5 class="right-align">Alineado a la derecha&lt/h5>
+&lt/div>
+&ltdiv>
+    &lth5 class="center-align">Alineado al centro&lt/h5>
+&lt/div></pre>
+
+						<br>
+						<h4>Alineamiento vertical</h4>
+						<p>Puedes centrar objetos verticalmente usando la clase <code class="prettyprint">valign-wrapper</code> al contenedor de los elementos que quieres centrar.</p>
+
+						<div class="row">
+							<div class="col s6 offset-s3 valign-wrapper" style="height:200px">
+								<h5>Verticalmente alineado</h5>
+							</div>
+						</div>
+
+<pre class="prettyprint">&ltdiv class="row">
+    &ltdiv class="col s6 offset-s3 valign-wrapper">
+        &lth5>Verticalmente alineado&lt/h5>
+    &lt/div>
+&lt/div></pre>
+
+					</div>
+
+					<div id="esconder" class="section scrollspy">
+						<h3 class="header">Esconder</h3>
+						<p>Proveemos de clases, fáciles de usar, para esconder contenido en tamaños de pantalla específicos.</p>
+
+						<table class="striped">
+							<thead>
+								<tr>
+									<th>Clase</th>
+									<th>Efecto</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><code class="prettyprint lang-cs">.hide</code></td>
+									<td>Escondido en todos los dispositivos</td>
+								</tr>
+								<tr>
+									<td><code class="prettyprint lang-cs">.hide-on-small-only</code></td>
+									<td>Escondido en móviles solamente</td>
+								</tr>
+								<tr>
+									<td><code class="prettyprint lang-cs">.hide-on-med-only</code></td>
+									<td>Escondido en tablets solamente</td>
+								</tr>
+								<tr>
+									<td><code class="prettyprint lang-cs">.hide-on-med-and-down</code></td>
+									<td>Escondido en tablets y más pequeños</td>
+								</tr>
+								<tr>
+									<td><code class="prettyprint lang-cs">.hide-on-med-and-up</code></td>
+									<td>Escondido en tablets y más grandes</td>
+								</tr>
+								<tr>
+									<td><code class="prettyprint lang-cs">.hide-on-large-only</code></td>
+									<td>Escondido en escritorio solamente</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<br>
+						<div class="hide"><span class="flow-text">Este texto no es visible</span></div>
+						<div class="hide-on-small-only"><span class="flow-text">Este texto es visible en tablet y escritorio.</span></div>
+						<div class="hide-on-med-only"><span class="flow-text">Este texto es visible en móvil y escritorio.</span></div>
+						<div class="hide-on-med-and-down"><span class="flow-text">Este texto sólo es visible en escritorio.</span></div>
+						<div class="hide-on-med-and-up"><span class="flow-text">Este texto sólo es visible en móbil.</span></div>
+						<div class="hide-on-large-only"><span class="flow-text">Este texto es visible en móvil y tablet.</span></div>
+
+						<br>
+
+<pre class="prettyprint">&ltdiv class="hide">Este texto no es visible&lt/div>
+&ltdiv class="hide-on-small-only">Este texto es visible en tablet y escritorio.&lt/div>
+&ltdiv class="hide-on-med-only">Este texto es visible en móvil y escritorio.&lt/div>
+&ltdiv class="hide-on-med-and-down">Este texto sólo es visible en escritorio.&lt/div>
+&ltdiv class="hide-on-med-and-up">Este texto sólo es visible en móbil.&lt/div>
+&ltdiv class="hide-on-large-only">Este texto es visible en móvil y tablet.&lt/div></pre>
+
+						<br>
+						<h4>Página web</h4>
+						<div class="row">
+							<div class="col s12 deep purple lighten-1 layout-bar-eg"></div>
+							<div class="col hide-on-med-and-down l3 grey layout-area-eg">
+								<div class="col s8 offset-s2 grey darken-2 layout-content-eg"></div>
+								<div class="col s5 offset-s2 grey darken-2 layout-content-eg"></div>
+								<div class="col s5 offset-s2 grey darken-2 layout-content-eg"></div>
+								<div class="col s6 offset-s2 grey darken-2 layout-content-eg"></div>
+							</div>
+							<div class="col s12 l9 green lighten-4 layout-area-eg">
+								<div class="col hide-on-small-only s2 offset-s9 yellow lighten-4 layout-toc-eg"></div>
+							</div>
+						</div>
+
+<pre class="prettyprint">&ltdiv class="row">
+    &ltdiv class="col s12">
+        Sección superior
+    &lt/div>
+
+    &ltdiv class="col hide-on-med-and-down l3">
+        Sección izquierda
+    &lt/div>
+
+    &ltdiv class="col s12 l9">
+        Sección derecha
+
+        &ltdiv class="col hide-on-small-only s2 offset-s9">
+            Sub-sección derecha
+        &lt/div>
+    &lt/div>
+&lt/div></pre>
+
+					</div>
+
+					<div id="flotar" class="section scrollspy">
+						<h3 class="header">Divisor</h3>
+						<p>Puedes dividir contenido contiguo de forma simple, usando la clase <code class="prettyprint">divider</code>.</p>
+
+						<div class="row">
+							<div class="col s12 divider"></div>
+							<div class="col s12">
+								<h5>Contenido 1</h5>
+								<p>Donec ac fermentum purus, non tempus ligula. Duis pharetra sollicitudin diam id sodales. Fusce id orci vitae odio suscipit luctus ac vitae velit.</p>
+							</div>
+							<div class="col s12 divider"></div>
+							<div class="col s12">
+								<h5>Contenido 2</h5>
+								<p>Fusce nisi elit, vestibulum vitae volutpat vel, dignissim ornare neque. Sed porttitor eros ac semper gravida. Duis dapibus nulla a nibh pellentesque ullamcorper.</p>
+							</div>
+							<div class="col s12 divider"></div>
+						</div>
+
+<pre class="prettyprint">&ltdiv class="row">
+    &ltdiv class="col s12 divider">&lt/div>
+    &ltdiv class="col s12">
+        &lth5>Contenido 1&lt/h5>
+        &ltp>Texto 1.&lt/p>
+    &lt/div>
+    &ltdiv class="col s12 divider">&lt/div>
+    &ltdiv class="col s12">
+        &lth5>Contenido 2&lt/h5>
+        &ltp>Texto 2.&lt/p>
+    &lt/div>
+    &ltdiv class="col s12 divider">&lt/div>
+&lt/div></pre>
+
+					</div>
+
+					<div id="flotar" class="section scrollspy">
+						<h3 class="header">Flotar</h3>
+						<p>La clase <code class="prettyprint">hoverable</code> agrega una animación de sombra, cuando el puntero pasa sobre el elemento, dando la apariencia de flotar. Puede ser usada en la mayoría de los elementos.</p>
+
+						<div class="hoverable grid-example" style="border:0;">Hoverable</div>
+
+<pre class="prettyprint">&ltdiv class="hoverable">Hoverable&lt/div></pre>
+
+					</div>
+
+					<div class="row center">
+						<div class="col s12 m6">
+							<a class="btn waves-effect waves-light" href="grid.html">
+								<i class="material-icons left">chevron_left</i>Grid
+							</a>
+						</div>
+						<div class="col s12 m6">
+							<a class="btn waves-effect waves-light" href="media.html">
+								<i class="material-icons right">chevron_right</i>Media
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Table of contents -->
+				<div class="col hide-on-small-only m3 l2">
+					<div class="toc-wrapper">
+						<ul class="section table-of-contents">
+							<li><a href="#alinear">Alinear</a></li>
+							<li><a href="#esconder">Esconder</a></li>
+							<li><a href="#flotar">Flotar</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer class="page-footer padd-on-large-300">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="footer-text white-text">Matlo.css</h5>
+					<p class="footer-text grey-text text-lighten-4">Matlo.css (Material designed Learning Objects CSS) fue creado - usando Materialize - para el diseño gráfico de Objetos de Aprendizaje, como parte de un Trabajo de Titulación del <a class="footer-link" href="http://www.informatica.usach.cl/">Departamento de Ingeniería Informática</a> de la <a class="footer-link" href="http://www.usach.cl/">Universidad de Santiago de Chile</a>.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<ul>
+						<li><a class="btn github-btn grey lighten-3 black-text" target="_blank" href="https://github.com/David-Hans/Matlo.css">
+							<img class="github-img left" src="../../media/images/GitHub_32_black.png">
+							GitHub
+						</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="https://material.io/">Material Design</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="http://materializecss.com/">Materialize</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="https://github.com/google/code-prettify">Prettify</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© David Hans, 2016.
+				<a class="grey-text text-lighten-4 right" href="#">MIT License</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../../../js/materialize.min.js"></script>
+	<!-- Import prettify -->
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+	<script type="text/javascript" src="../../js/init.js"></script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+
+	<!-- Import Google Icon Font -->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Import matlo.css -->
+	<link href="../../../css/matlo.css" rel="stylesheet">
+	<!-- Import prettify.css -->
+	<link href="../../css/prettify.css" rel="stylesheet">
+
+	<link rel="icon" href="../../media/images/favicon-32x32.png" sizes="32x32"/>
+
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+	<meta name="robots" content=""/>
+	<meta name="author" content=""/>
+
+	<!-- Título -->
+	<title>Modal | Matlo.css</title>
+</head>
+
+<body>
+
+	<header class="padd-on-large-300">
+		<!-- Header -->
+		<nav class="top-nav">
+			<div class="container">
+				<div class="nav-wrapper">
+					<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+					<!-- Título -->
+					<a class="page-title brand-logo">Modal</a>
+				</div>
+			</div>
+		</nav>
+		<!-- SideNavBar -->
+		<ul id="slide-out" class="side-nav fixed">
+			<li class="logo">
+				<img src="../../media/images/favicon-100x100.png" alt="Matlo.css">
+			</li>
+			<li><a class="waves-effect" href="../comenzar.html">Comenzar</a></li>
+			<li>
+				<ul class="collapsible">
+					<li>
+						<div class="collapsible-header no-padding"><a class="waves-effect">CSS</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../css/grid.html">Grid</a></li>
+								<li><a class="waves-effect" href="../css/contenido.html">Control de contenido</a></li>
+								<li><a class="waves-effect" href="../css/media.html">Media</a></li>
+								<li><a class="waves-effect" href="../css/sombra.html">Sombra</a></li>
+								<li><a class="waves-effect" href="../css/alertas.html">Alertas</a></li>
+								<li><a class="waves-effect" href="../css/tablas.html">Tablas</a></li>
+								<li><a class="waves-effect" href="../css/colores.html">Colores</a></li>
+								<li><a class="waves-effect" href="../css/tipografia.html">Tipografía</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header no-padding"><a class="waves-effect">Componentes</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../componentes/botones.html">Botones</a></li>
+								<li><a class="waves-effect" href="../componentes/avance.html">Barras de avance</a></li>
+								<li><a class="waves-effect" href="../componentes/cartas.html">Cartas</a></li>
+								<li><a class="waves-effect" href="../componentes/pie.html">Pie de página</a></li>
+								<li><a class="waves-effect" href="../componentes/forms.html">Forms</a></li>
+								<li><a class="waves-effect" href="../componentes/iconos.html">Íconos</a></li>
+								<li><a class="waves-effect" href="../componentes/navegacion.html">Barra de navegación</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header active no-padding"><a class="waves-effect">JavaScript</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../javascript/carrusel.html">Carrusel</a></li>
+								<li><a class="waves-effect" href="../javascript/plegables.html">Plegables</a></li>
+								<li><a class="waves-effect" href="../javascript/tooltips.html">Tooltips</a></li>
+								<li><a class="waves-effect" href="../javascript/dropdown.html">Dropdown</a></li>
+								<li><a class="waves-effect" href="../javascript/media.html">Media</a></li>
+								<li class="active"><a class="waves-effect" href="../javascript/modal.html">Modal</a></li>
+								<li><a class="waves-effect" href="../javascript/pushpinscrollspy.html">Pushpin y Scrollspy</a></li>
+								<li><a class="waves-effect" href="../javascript/lateral.html">Barra navegadora lateral</a></li>
+								<li><a class="waves-effect" href="../javascript/waves.html">Waves</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li><a class="waves-effect" href="../recursos.html">Recursos</a></li>
+		</ul>
+		
+	</header>
+
+	<main class="padd-on-large-300">
+		<!-- Content -->
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m9 l10">
+					<p class="caption col s12">Puedes crear cajas de diálogo, mensajes de confirmación, u otro contenido usando modal.</p>
+
+					<div id="basico" class="section scrollspy">
+						<h3 class="header">Básico</h3>
+						<p>Para que funcione, tienes que agregar el <code class="prettyprint">id</code> del modal al link del activador.<br>Para agregar un botón de cerrar, agrega la clase <code class="prettyprint">modal-close</code> a tu botón.</p>
+
+						<a class="waves-effect waves-light btn" href="#modal1">Modal 1</a>
+						<div id="modal1" class="modal">
+							<div class="modal-content">
+								<h4>Header del modal</h4>
+								<p>Donec dignissim velit vel facilisis accumsan. Fusce interdum dignissim ex et rhoncus. Mauris et nunc ligula. Integer varius, dolor ut finibus posuere, purus massa consectetur ligula, volutpat eleifend sem orci sit amet risus. Vestibulum a efficitur lorem. Curabitur placerat rhoncus feugiat. Cras eleifend elit id urna pellentesque laoreet. Fusce quis orci eget orci tincidunt ornare. Mauris ultrices tellus purus, eget mollis diam ullamcorper non.</p>
+							</div>
+							<div class="modal-footer">
+								<a href="#!" class=" modal-action modal-close btn-flat">Cerrar</a>
+							</div>
+						</div>
+
+<pre class="prettyprint">&lt!-- Activador -->
+&lta class="waves-effect waves-light btn" href="#modal1">Modal&lt/a>
+
+&ltdiv id="modal1" class="modal">
+    &ltdiv class="modal-content">
+        &lth4>Header del modal&lt/h4>
+        &ltp>Contenido&lt/p>
+    &lt/div>
+    &ltdiv class="modal-footer">
+        &lta href="#!" class=" modal-action modal-close btn-flat">Cerrar&lt/a>
+    &lt/div>
+&lt/div></pre>
+
+						<br>
+						<h4>Inicialización</h4>
+						<p>Para poder abrir el modal, hay que inicializarlo.</p>
+
+<pre class="prettyprint">$(document).ready(function(){
+    $('.modal').modal();
+});</pre>
+
+					</div>
+
+					<div id="pie" class="section scrollspy">
+						<h3 class="header">Pie de página</h3>
+						<p>Si tienes contenido muy largo y quieres que los botones de acción se mantengan visibles en todo momento, puedes agregar la clase <code class="prettyprint lang-html">modal-fixed-footer</code> al modal.</p>
+
+						<a class="modal-trigger waves-effect waves-light btn" href="#modal2">Modal 2</a>
+						<div id="modal2" class="modal modal-fixed-footer">
+							<div class="modal-content">
+								<h4>Header del modal</h4>
+								<p>Morbi molestie feugiat sapien luctus mollis. In sed massa sed ex condimentum scelerisque quis id ex. Curabitur ut enim sed lectus gravida efficitur. Sed eget purus nec metus mollis vulputate sed vitae orci. Sed accumsan nunc nibh, eu hendrerit libero volutpat non. Vivamus eleifend porttitor eros. Cras posuere tellus quis erat aliquam, in feugiat erat eleifend. Nullam lorem erat, fermentum ut odio egestas, porttitor pretium libero. Donec non eros odio. Cras et magna pellentesque, tempus elit non, fringilla ipsum. Curabitur sodales odio odio, at eleifend orci varius et.<br>Phasellus vehicula sed est sit amet rhoncus. Maecenas eleifend, quam quis semper commodo, ante purus vehicula augue, et maximus nisi justo eu nunc. Cras vitae felis ut sapien venenatis convallis quis vitae ante. Phasellus non finibus eros, eget commodo est. Vestibulum vehicula, dui in tristique viverra, lorem lorem egestas odio, at commodo urna enim in massa. Morbi nec nisl vel mi finibus ullamcorper. Sed in luctus augue. Praesent gravida risus odio, eu laoreet leo pretium bibendum. Nam porttitor porta condimentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<br>Phasellus vehicula sed est sit amet rhoncus. Maecenas eleifend, quam quis semper commodo, ante purus vehicula augue, et maximus nisi justo eu nunc. Cras vitae felis ut sapien venenatis convallis quis vitae ante. Phasellus non finibus eros, eget commodo est. Vestibulum vehicula, dui in tristique viverra, lorem lorem egestas odio, at commodo urna enim in massa. Morbi nec nisl vel mi finibus ullamcorper. Sed in luctus augue. Praesent gravida risus odio, eu laoreet leo pretium bibendum. Nam porttitor porta condimentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<br>Sed sodales elit vel turpis eleifend tempus. Mauris congue ligula dictum, euismod massa at, pulvinar arcu. Integer pharetra sapien nec nisl ornare ultrices. Nam bibendum consectetur dui eu dictum. Morbi nec leo tellus. Maecenas in mollis erat. Cras tempor egestas magna. Cras et placerat turpis. Phasellus at lacus turpis. Fusce cursus tellus et venenatis commodo. Praesent in augue sem. Mauris efficitur est quis nunc euismod sagittis. Mauris ullamcorper nulla eget sapien dignissim pellentesque.</p>
+							</div>
+							<div class="modal-footer">
+								<a href="#!" class="modal-action modal-close btn-flat ">Agree</a>
+							</div>
+						</div>
+
+<pre class="prettyprint">&lta class="modal-trigger waves-effect waves-light btn" href="#modal2">Modal&lt/a>
+&ltdiv id="modal2" class="modal modal-fixed-footer">
+    &ltdiv class="modal-content">
+        &lth4>Header del modal&lt/h4>
+        &ltp>Contenido&lt/p>
+    &lt/div>
+    &ltdiv class="modal-footer">
+        &lta href="#!" class="modal-action modal-close btn-flat ">Agree&lt/a>
+    &lt/div>
+&lt/div></pre>
+
+					</div>
+
+					<div id="abajo" class="section scrollspy">
+						<h3 class="header">Desde abajo</h3>
+						<p>Actúan como modales comunes, pero, aparecen desde el fondo de la página.</p>
+
+						<a class="waves-effect waves-light btn" href="#modal3">Modal 3</a>
+						<div id="modal3" class="modal bottom-sheet">
+							<div class="modal-content">
+								<h4>Header del modal</h4>
+								<p>Vivamus gravida suscipit quam vel ornare. Vivamus posuere venenatis urna, in aliquet ex tristique eu. Etiam at porta nulla. Sed a pellentesque quam. Praesent placerat nibh velit, vitae efficitur mauris ullamcorper id. Mauris sit amet sodales ex. Sed diam arcu, feugiat ac massa id, egestas interdum leo.</p>
+							</div>
+							<div class="modal-footer">
+								<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+							</div>
+						</div>
+
+<pre class="prettyprint">&lta class="waves-effect waves-light btn" href="#modal3">Modal&lt/a>
+&ltdiv id="modal3" class="modal bottom-sheet">
+    &ltdiv class="modal-content">
+        &lth4>Header del modal&lt/h4>
+        &ltp>Contenido&lt/p>
+    &lt/div>
+    &ltdiv class="modal-footer">
+        &lta href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree&lt/a>
+    &lt/div>
+&lt/div></pre>
+
+					</div>
+
+					<div id="boton" class="section scrollspy">
+						<h3 class="header">Botón</h3>
+						<p>Para usar modales con botones, tienes que especificar el <code class="prettyprint">id</code> del modal en <code class="prettyprint">data-target</code>, en vez de usar el atributo <code class="prettyprint">href</code>.</p>
+
+						<button data-target="modal3" class="btn">Modal 3</button>
+
+<pre class="prettyprint">&ltbutton data-target="modal3" class="btn">Modal&lt/button></pre>
+
+					</div>
+
+					<div class="row center">
+						<div class="col s12 m6">
+							<a class="btn waves-effect waves-light" href="media.html">
+								<i class="material-icons left">chevron_left</i>media
+							</a>
+						</div>
+						<div class="col s12 m6">
+							<a class="btn waves-effect waves-light" href="pushpinscrollspy.html">
+								<i class="material-icons right">chevron_right</i>pushpin y scrollspy
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Table of contents -->
+				<div class="col hide-on-small-only m3 l2">
+					<div class="toc-wrapper">
+						<ul class="section table-of-contents">
+							<li><a href="#basico">Básico</a></li>
+							<li><a href="#pie">Pie de página</a></li>
+							<li><a href="#abajo">Desde abajo</a></li>
+							<li><a href="#boton">Botón</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer class="page-footer padd-on-large-300">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="footer-text white-text">Matlo.css</h5>
+					<p class="footer-text grey-text text-lighten-4">Matlo.css (Material designed Learning Objects CSS) fue creado - usando Materialize - para el diseño gráfico de Objetos de Aprendizaje, como parte de un Trabajo de Titulación del <a class="footer-link" href="http://www.informatica.usach.cl/">Departamento de Ingeniería Informática</a> de la <a class="footer-link" href="http://www.usach.cl/">Universidad de Santiago de Chile</a>.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<ul>
+						<li><a class="btn github-btn grey lighten-3 black-text" target="_blank" href="https://github.com/David-Hans/Matlo.css">
+							<img class="github-img left" src="../../media/images/GitHub_32_black.png">
+							GitHub
+						</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="https://material.io/">Material Design</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="http://materializecss.com/">Materialize</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="https://github.com/google/code-prettify">Prettify</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© David Hans, 2016.
+				<a class="grey-text text-lighten-4 right" href="#">MIT License</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../../../js/materialize.min.js"></script>
+	<!-- Import prettify -->
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+	<script type="text/javascript" src="../../js/init.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.modal').modal();
+		});
+	</script>
+</body>
+</html>

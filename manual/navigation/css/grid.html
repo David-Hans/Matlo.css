@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+
+	<!-- Import Google Icon Font -->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Import matlo.css -->
+	<link href="../../../css/matlo.css" rel="stylesheet">
+	<!-- Import prettify.css -->
+	<link href="../../css/prettify.css" rel="stylesheet">
+
+	<link rel="icon" href="../../media/images/favicon-32x32.png" sizes="32x32"/>
+
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+	<meta name="robots" content=""/>
+	<meta name="author" content=""/>
+
+	<!-- Título -->
+	<title>Grid | Matlo.css</title>
+</head>
+
+<body>
+
+	<header class="padd-on-large-300">
+		<!-- Header -->
+		<nav class="top-nav">
+			<div class="container">
+				<div class="nav-wrapper">
+					<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+					<!-- Título -->
+					<a class="page-title brand-logo">Grid</a>
+				</div>
+			</div>
+		</nav>
+		<!-- SideNavBar -->
+		<ul id="slide-out" class="side-nav fixed">
+			<li class="logo">
+				<img src="../../media/images/favicon-100x100.png" alt="Matlo.css">
+			</li>
+			<li><a class="waves-effect" href="../comenzar.html">Comenzar</a></li>
+			<li>
+				<ul class="collapsible">
+					<li>
+						<div class="collapsible-header active no-padding"><a class="waves-effect">CSS</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li class="active"><a class="waves-effect" href="../css/grid.html">Grid</a></li>
+								<li><a class="waves-effect" href="../css/contenido.html">Control de contenido</a></li>
+								<li><a class="waves-effect" href="../css/media.html">Media</a></li>
+								<li><a class="waves-effect" href="../css/sombra.html">Sombra</a></li>
+								<li><a class="waves-effect" href="../css/alertas.html">Alertas</a></li>
+								<li><a class="waves-effect" href="../css/tablas.html">Tablas</a></li>
+								<li><a class="waves-effect" href="../css/colores.html">Colores</a></li>
+								<li><a class="waves-effect" href="../css/tipografia.html">Tipografía</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header no-padding"><a class="waves-effect">Componentes</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../componentes/botones.html">Botones</a></li>
+								<li><a class="waves-effect" href="../componentes/avance.html">Barras de avance</a></li>
+								<li><a class="waves-effect" href="../componentes/cartas.html">Cartas</a></li>
+								<li><a class="waves-effect" href="../componentes/pie.html">Pie de página</a></li>
+								<li><a class="waves-effect" href="../componentes/forms.html">Forms</a></li>
+								<li><a class="waves-effect" href="../componentes/iconos.html">Íconos</a></li>
+								<li><a class="waves-effect" href="../componentes/navegacion.html">Barra de navegación</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header no-padding"><a class="waves-effect">JavaScript</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../javascript/carrusel.html">Carrusel</a></li>
+								<li><a class="waves-effect" href="../javascript/plegables.html">Plegables</a></li>
+								<li><a class="waves-effect" href="../javascript/tooltips.html">Tooltips</a></li>
+								<li><a class="waves-effect" href="../javascript/dropdown.html">Dropdown</a></li>
+								<li><a class="waves-effect" href="../javascript/media.html">Media</a></li>
+								<li><a class="waves-effect" href="../javascript/modal.html">Modal</a></li>
+								<li><a class="waves-effect" href="../javascript/pushpinscrollspy.html">Pushpin y Scrollspy</a></li>
+								<li><a class="waves-effect" href="../javascript/lateral.html">Barra navegadora lateral</a></li>
+								<li><a class="waves-effect" href="../javascript/waves.html">Waves</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li><a class="waves-effect" href="../recursos.html">Recursos</a></li>
+		</ul>
+		
+	</header>
+
+	<main class="padd-on-large-300">
+		<!-- Content -->
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m9 l10">
+					<p class="caption col s12">Usamos el sistema Grid responsivo de 12 columnas (estándar). Este Grid permite organizar tus diseños de forma fácil y ordenada.</p>
+
+					<div id="container" class="section scrollspy">
+						<h3 class="header">Container</h3>
+						<p>El container no es estrictamente parte del sistema Grid, pero, sirve para encapsular el contenido de tus páginas. Para usar un container tienes que declarar la clase <code class="prettyprint">container</code> dentro de un <code class="prettyprint">&ltdiv></code>, como se muestra a continuación.</p>
+
+<pre class="prettyprint">&ltbody>
+    &ltdiv class="container">
+        &lt!-- Contentenido -->
+    &lt/div>
+&lt/body></pre>
+					
+					<p>Nuestro container es de ancho completo, por lo que ocupa todo el espacio disponible</p>
+					</div>
+
+					<div id="grid" class="section scrollspy">
+						<h3 class="header">Sistema Grid</h3>
+						<h4>12 Columnas</h4>
+						<p>Sin importar el tamaño del navegador, el grid siempre tiene 12 columnas de igual ancho.</p>
+
+						<div class="row">
+							<div class="col s1 grid-example"><span class="flow-text">1</span></div>
+							<div class="col s1 grid-example"><span class="flow-text">1</span></div>
+							<div class="col s1 grid-example"><span class="flow-text">1</span></div>
+							<div class="col s1 grid-example"><span class="flow-text">1</span></div>
+							<div class="col s1 grid-example"><span class="flow-text">1</span></div>
+							<div class="col s1 grid-example"><span class="flow-text">1</span></div>
+							<div class="col s1 grid-example"><span class="flow-text">1</span></div>
+							<div class="col s1 grid-example"><span class="flow-text">1</span></div>
+							<div class="col s1 grid-example"><span class="flow-text">1</span></div>
+							<div class="col s1 grid-example"><span class="flow-text">1</span></div>
+							<div class="col s1 grid-example"><span class="flow-text">1</span></div>
+							<div class="col s1 grid-example"><span class="flow-text">1</span></div>
+						</div>
+
+<pre class="prettyprint">&ltdiv class="row">
+    &ltdiv class="col s1">1&lt/div>
+    &ltdiv class="col s1">1&lt/div>
+    &ltdiv class="col s1">1&lt/div>
+    &ltdiv class="col s1">1&lt/div>
+    &ltdiv class="col s1">1&lt/div>
+    &ltdiv class="col s1">1&lt/div>
+    &ltdiv class="col s1">1&lt/div>
+    &ltdiv class="col s1">1&lt/div>
+    &ltdiv class="col s1">1&lt/div>
+    &ltdiv class="col s1">1&lt/div>
+    &ltdiv class="col s1">1&lt/div>
+    &ltdiv class="col s1">1&lt/div>
+&lt/div></pre>
+
+						<p>Nota: La clase <code class="prettyprint">s1</code> declara dos cosas: <code class="prettyprint">s</code> indica el tamaño de pantalla (más sobre esto en la sección <a href="#responsivo">Diseño responsivo</a>) y <code class="prettyprint">1</code> el ancho de la columna.</p>
+						
+						<h4>Row</h4>
+						<p>Las columnas deben ser declaradas dentro de un Row y se debe agregar la clase <code class="prettyprint">col</code> a los <code class="prettyprint">&ltdiv></code> internos para que éstos sean columnas.</p>
+						
+						<div class="row">
+							<div class="col s12 grid-example"><span class="flow-text">Este div mide 12 columnas</span></div>
+							<div class="col s6 grid-example"><span class="flow-text">6 columnas</span></div>
+							<div class="col s6 grid-example"><span class="flow-text">6 columnas</span></div>
+							<div class="col s4 grid-example"><span class="flow-text">4 columnas</span></div>
+							<div class="col s4 grid-example"><span class="flow-text">4 columnas</span></div>
+							<div class="col s4 grid-example"><span class="flow-text">4 columnas</span></div>
+							<div class="col s3 grid-example"><span class="flow-text">3 columnas</span></div>
+							<div class="col s3 grid-example"><span class="flow-text">3 columnas</span></div>
+							<div class="col s3 grid-example"><span class="flow-text">3 columnas</span></div>
+							<div class="col s3 grid-example"><span class="flow-text">3 columnas</span></div>
+							<div class="col s3 grid-example"><span class="flow-text">3 columnas</span></div>
+							<div class="col s1 grid-example"><span class="flow-text">1</span></div>
+							<div class="col s6 grid-example"><span class="flow-text">6 columnas</span></div>
+							<div class="col s2 grid-example"><span class="flow-text">2</span></div>
+						</div>
+
+<pre class="prettyprint">&ltdiv class="row">
+    &ltdiv class="col s12">Este div mide 12 columnas&lt/div>
+
+    &ltdiv class="col s6">6 columnas&lt/div>
+    &ltdiv class="col s6">6 columnas&lt/div>
+
+    &ltdiv class="col s4">4 columnas&lt/div>
+    &ltdiv class="col s4">4 columnas&lt/div>
+    &ltdiv class="col s4">4 columnas&lt/div>
+
+    &ltdiv class="col s3">3 columnas&lt/div>
+    &ltdiv class="col s3">3 columnas&lt/div>
+    &ltdiv class="col s3">3 columnas&lt/div>
+    &ltdiv class="col s3">3 columnas&lt/div>
+
+    &ltdiv class="col s3">3 columnas&lt/div>
+    &ltdiv class="col s1">1&lt/div>
+    &ltdiv class="col s6">6 columnas&lt/div>
+    &ltdiv class="col s2">2&lt/div>
+&lt/div></pre>
+					
+					</div>
+
+					<div id="offset" class="section scrollspy">
+						<h3 class="header">Offset</h3>
+						<p>Permite acomodar o empujar columnas, para usarlo hay que agregar la clase <code class="prettyprint">offset-s2</code>, donde <code class="prettyprint">s</code> es el tamaño de pantalla (<a href="#responsivo">Diseño responsivo</a>) y <code class="prettyprint">2</code> es el número de columnas del offset.</p>
+						
+						<div class="row">
+							<div class="col s12 grid-example"><span class="flow-text">12 columnas (0 offset)</span></div>
+							<div class="col s10 offset-s2 grid-example"><span class="flow-text">10 columnas (2 offset)</span></div>
+							<div class="col s6 offset-s6 grid-example"><span class="flow-text">6 columnas (6 offset)</span></div>
+							<div class="col s4 offset-s2 grid-example"><span class="flow-text">4 col (2 offset)</span></div>
+							<div class="col s4 offset-s2 grid-example"><span class="flow-text">4 col (2 offset)</span></div>
+						</div>
+
+<pre class="prettyprint">&ltdiv class="row">
+    &ltdiv class="col s12">12 columnas (0 offset)&lt/div>
+    &ltdiv class="col s10 offset-s2">10 columnas (2 offset)&lt/div>
+    &ltdiv class="col s6 offset-s6">6 columnas (6 offset)&lt/div>
+    &ltdiv class="col s4 offset-s2">4 col (2 offset)&lt/div>
+    &ltdiv class="col s4 offset-s2">4 col (2 offset)&lt/div>
+&lt/div></pre>
+
+					</div>
+
+					<div id="pushpull" class="section scrollspy">
+						<h3 class="header">Push y Pull</h3>
+						<p>Permiten cambiar el orden de las columnas tirando (Pull) o empujándolas (Push). Sólo hay que agregar la clase <code class="prettyprint">push-s2</code> o <code class="prettyprint">pull-s2</code>, donde <code class="prettyprint">s</code> es el tamaño de pantalla (<a href="#responsivo">Diseño responsivo</a>) y <code class="prettyprint">2</code> es el número de columnas.</p>
+
+						<div class="row">
+							<div class="col s1 push-s11 grid-example"><span class="flow-text">1</span></div>
+							<div class="col s1 push-s9 grid-example"><span class="flow-text">2</span></div>
+							<div class="col s1 push-s7 grid-example"><span class="flow-text">3</span></div>
+							<div class="col s1 push-s5 grid-example"><span class="flow-text">4</span></div>
+							<div class="col s1 push-s3 grid-example"><span class="flow-text">5</span></div>
+							<div class="col s1 push-s1 grid-example"><span class="flow-text">6</span></div>
+							<div class="col s1 pull-s1 grid-example"><span class="flow-text">7</span></div>
+							<div class="col s1 pull-s3 grid-example"><span class="flow-text">8</span></div>
+							<div class="col s1 pull-s5 grid-example"><span class="flow-text">9</span></div>
+							<div class="col s1 pull-s7 grid-example"><span class="flow-text">10</span></div>
+							<div class="col s1 pull-s9 grid-example"><span class="flow-text">11</span></div>
+							<div class="col s1 pull-s11 grid-example"><span class="flow-text">12</span></div>
+						</div>
+
+<pre class="prettyprint">&ltdiv class="row">
+    &ltdiv class="col s1 push-s11">1&lt/div>
+    &ltdiv class="col s1 push-s9">2&lt/div>
+    &ltdiv class="col s1 push-s7">3&lt/div>
+    &ltdiv class="col s1 push-s5">4&lt/div>
+    &ltdiv class="col s1 push-s3">5&lt/div>
+    &ltdiv class="col s1 push-s1">6&lt/div>
+    &ltdiv class="col s1 pull-s1">7&lt/div>
+    &ltdiv class="col s1 pull-s3">8&lt/div>
+    &ltdiv class="col s1 pull-s5">9&lt/div>
+    &ltdiv class="col s1 pull-s7">10&lt/div>
+    &ltdiv class="col s1 pull-s9">11&lt/div>
+    &ltdiv class="col s1 pull-s11">12&lt/div>
+&lt/div></pre>
+
+					</div>
+
+					<div id="ejemplos" class="section scrollspy">
+						<h3 class="header">Ejemplos de diseño</h3>
+						<p>A continuación, dos ejemplos simples de cómo aplicar el sistema Grid.</p>
+
+						<h4>Secciones</h4>
+						<div class="row">
+							<div class="col s4">
+								<h5>Sección 1</h5>
+								<p>Mauris quis urna metus. Phasellus placerat lectus in mauris tempor feugiat. Aliquam aliquet leo a interdum vestibulum. Sed aliquam tortor diam, ac mattis ligula tristique sit amet.</p>
+							</div>
+							<div class="col s4">
+								<h5>Sección 2</h5>
+								<p>Aliquam interdum nisl vel mauris hendrerit, ut congue enim blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla non ligula quis mauris tincidunt dignissim.</p>
+							</div>
+							<div class="col s4">
+								<h5>Sección 3</h5>
+								<p>Donec vel lectus a orci hendrerit tincidunt sit amet id est. Aenean dapibus sapien non diam imperdiet convallis ac sed nunc. Fusce leo dolor, tincidunt vel faucibus in, blandit quis diam.</p>
+							</div>
+						</div>
+
+<pre class="prettyprint">&ltdiv class="row">
+    &ltdiv class="col s4">
+        Sección 1
+    &lt/div>
+    &ltdiv class="col s4">
+        Sección 2
+    &lt/div>
+    &ltdiv class="col s4">
+        Sección 3
+    &lt/div>
+&lt/div></pre>
+
+						<br>
+						<h4>Página web</h4>
+						<div class="row">
+							<div class="col s12 deep purple lighten-1 layout-bar-eg"></div>
+							<div class="col s3 grey layout-area-eg">
+								<div class="col s8 offset-s2 grey darken-2 layout-content-eg"></div>
+								<div class="col s5 offset-s2 grey darken-2 layout-content-eg"></div>
+								<div class="col s5 offset-s2 grey darken-2 layout-content-eg"></div>
+								<div class="col s6 offset-s2 grey darken-2 layout-content-eg"></div>
+							</div>
+							<div class="col s9 green lighten-4 layout-area-eg">
+								<div class="col s7 offset-s1 green lighten-1 layout-content-eg"></div>
+								<div class="col s3 offset-s2 green lighten-1 layout-content-eg"></div>
+								<div class="col s3 offset-s3 green lighten-1 layout-content-eg"></div>
+								<div class="col s3 offset-s2 green lighten-1 layout-content-eg"></div>
+								<div class="col s3 offset-s3 green lighten-1 layout-content-eg"></div>
+								<div class="col s2 offset-s1 green lighten-1 layout-content-eg"></div>
+								<div class="col s3 offset-s3 green lighten-1 layout-content-eg"></div>
+							</div>
+						</div>
+
+<pre class="prettyprint">&ltdiv class="row">
+    &ltdiv class="col s12">
+        Sección superior
+    &lt/div>
+
+    &ltdiv class="col s3">
+        Sección izquierda
+    &lt/div>
+
+    &ltdiv class="col s9">
+        Sección derecha
+    &lt/div>
+&lt/div></pre>
+
+					</div>
+
+					<div id="responsivo" class="section scrollspy">
+						<h3 class="header">Diseño Responsivo</h3>
+						<p>Con el diseño responsivo, puedes crear páginas que se ven bien en cualquier dispositivo</p>
+
+						<h4>Tamaños de pantalla</h4>
+						<table class="highlight">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Móviles<br>&lt=600px</th>
+									<th>Tablets<br>&lt=992px</th>
+									<th>Escritorio<br>>=992px</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>Clase</strong></td>
+									<td><code class="prettyprint lang-cs">.s</code></td>
+									<td><code class="prettyprint lang-cs">.m</code></td>
+									<td><code class="prettyprint lang-cs">.l</code></td>
+								</tr>
+								<tr>
+									<td><strong>Número de columnas</strong></td>
+									<td>12</td>
+									<td>12</td>
+									<td>12</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<h4>Uso</h4>
+						<p>En los ejemplos anteriores sólo definimos el tamaño para pantallas pequeñas, usando <code class="prettyprint">"col s12"</code>. Esto está bien si queremos un diseño fijo, ya que las reglas se propagan hacia arriba. Al usar <code class="prettyprint">s12</code>, escencialmente estamos diciendo <code class="prettyprint">"col s12 m12 l12"</code>, pero, al definir explícitamente los tamaños podemos crear sitios responsivos.</p>
+
+						<p>Cambia el tamaño de tu ventana de navegación para ver las diferencias en los ejemplos a continuación</p>
+
+						<div class="row">
+							<div class="col s12 grid-example">s12</div>
+							<div class="col m12 grid-example">m12</div>
+							<div class="col l12 grid-example">l12</div>
+						</div>
+
+<pre class="prettyprint">&ltdiv class="row">
+    &ltdiv class="col s12">s12&lt/div>
+    &ltdiv class="col m12">m12&lt/div>
+    &ltdiv class="col l12">l12&lt/div>
+&lt/div></pre>
+
+						<br>
+						<h4>Ejemplos</h4>
+						<div class="row">
+							<div class="col s12 grid-example"><p>s12</p></div>
+							<div class="col s12 m4 l3 grid-example"><p>s12 m4 l3</p></div>
+							<div class="col s12 m4 l6 grid-example"><p>s12 m4 l6</p></div>
+							<div class="col s12 m4 l3 grid-example"><p>s12 m4 l3</p></div>
+							<div class="col s12 m6 l3 grid-example"><p>s12 m6 l3</p></div>
+							<div class="col s12 m6 l3 grid-example"><p>s12 m6 l3</p></div>
+							<div class="col s12 m6 l3 grid-example"><p>s12 m6 l3</p></div>
+							<div class="col s12 m6 l3 grid-example"><p>s12 m6 l3</p></div>
+						</div>
+
+<pre class="prettyprint">&ltdiv class="row">
+    &ltdiv class="col s12">&ltp>s12&lt/p>&lt/div>
+
+    &ltdiv class="col s12 m4 l3">&ltp>s12 m4 l3&lt/p>&lt/div>
+    &ltdiv class="col s12 m4 l6">&ltp>s12 m4 l6&lt/p>&lt/div>
+    &ltdiv class="col s12 m4 l3">&ltp>s12 m4 l3&lt/p>&lt/div>
+
+    &ltdiv class="col s12 m6 l3">&ltp>s12 m6 l3&lt/p>&lt/div>
+    &ltdiv class="col s12 m6 l3">&ltp>s12 m6 l3&lt/p>&lt/div>
+    &ltdiv class="col s12 m6 l3">&ltp>s12 m6 l3&lt/p>&lt/div>
+    &ltdiv class="col s12 m6 l3">&ltp>s12 m6 l3&lt/p>&lt/div>
+&lt/div></pre>
+
+						<br>
+						<h4>Página web responsiva</h4>
+						<div class="row">
+							<div class="col s12 deep purple lighten-1 layout-bar-eg"></div>
+							<div class="col s12 m9 l3 grey layout-area-eg">
+								<div class="col s8 offset-s2 grey darken-2 layout-content-eg"></div>
+								<div class="col s5 offset-s2 grey darken-2 layout-content-eg"></div>
+								<div class="col s5 offset-s2 grey darken-2 layout-content-eg"></div>
+								<div class="col s6 offset-s2 grey darken-2 layout-content-eg"></div>
+							</div>
+							<div class="col s12 m3 l9 green lighten-4 layout-area-eg">
+								<div class="col s7 offset-s1 green lighten-1 layout-content-eg"></div>
+								<div class="col s3 offset-s2 green lighten-1 layout-content-eg"></div>
+								<div class="col s3 offset-s3 green lighten-1 layout-content-eg"></div>
+								<div class="col s3 offset-s2 green lighten-1 layout-content-eg"></div>
+								<div class="col s3 offset-s3 green lighten-1 layout-content-eg"></div>
+								<div class="col s2 offset-s1 green lighten-1 layout-content-eg"></div>
+								<div class="col s3 offset-s3 green lighten-1 layout-content-eg"></div>
+							</div>
+						</div>
+
+<pre class="prettyprint">&ltdiv class="row">
+    &ltdiv class="col s12">
+        Sección superior
+    &lt/div>
+
+    &ltdiv class="col s12 m9 l3">
+        Sección izquierda
+    &lt/div>
+
+    &ltdiv class="col s12 m3 l9">
+        Sección derecha
+    &lt/div>
+&lt/div></pre>
+
+					</div>
+
+					<div class="row center">
+						<div class="col s12 m6">
+							<a class="btn waves-effect waves-light" href="../comenzar.html">
+								<i class="material-icons left">chevron_left</i>Comenzar
+							</a>
+						</div>
+						<div class="col s12 m6">
+							<a class="btn waves-effect waves-light" href="contenido.html">
+								<i class="material-icons right">chevron_right</i>Control de contenido
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Table of contents -->
+				<div class="col hide-on-small-only m3 l2">
+					<div class="toc-wrapper">
+						<ul class="section table-of-contents">
+							<li><a href="#container">Container</a></li>
+							<li><a href="#grid">Sistema Grid</a></li>
+							<li><a href="#offset">Offset</a></li>
+							<li><a href="#pushpull">Push y Pull</a></li>
+							<li><a href="#ejemplos">Ejemplos de diseño</a></li>
+							<li><a href="#responsivo">Diseño responsivo</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer class="page-footer padd-on-large-300">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="footer-text white-text">Matlo.css</h5>
+					<p class="footer-text grey-text text-lighten-4">Matlo.css (Material designed Learning Objects CSS) fue creado - usando Materialize - para el diseño gráfico de Objetos de Aprendizaje, como parte de un Trabajo de Titulación del <a class="footer-link" href="http://www.informatica.usach.cl/">Departamento de Ingeniería Informática</a> de la <a class="footer-link" href="http://www.usach.cl/">Universidad de Santiago de Chile</a>.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<ul>
+						<li><a class="btn github-btn grey lighten-3 black-text" target="_blank" href="https://github.com/David-Hans/Matlo.css">
+							<img class="github-img left" src="../../media/images/GitHub_32_black.png">
+							GitHub
+						</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="https://material.io/">Material Design</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="http://materializecss.com/">Materialize</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="https://github.com/google/code-prettify">Prettify</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© David Hans, 2016.
+				<a class="grey-text text-lighten-4 right" href="#">MIT License</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../../../js/materialize.min.js"></script>
+	<!-- Import prettify -->
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+	<script type="text/javascript" src="../../js/init.js"></script>
+</body>
+</html>

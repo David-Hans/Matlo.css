@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+
+	<!-- Import Google Icon Font -->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Import matlo.css -->
+	<link href="../../../css/matlo.css" rel="stylesheet">
+	<!-- Import prettify.css -->
+	<link href="../../css/prettify.css" rel="stylesheet">
+
+	<link rel="icon" href="../../media/images/favicon-32x32.png" sizes="32x32"/>
+
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+	<meta name="robots" content=""/>
+	<meta name="author" content=""/>
+
+	<!-- Título -->
+	<title>Barra de navegación | Matlo.css</title>
+</head>
+
+<body>
+
+	<header class="padd-on-large-300">
+		<!-- Header -->
+		<nav class="top-nav">
+			<div class="container">
+				<div class="nav-wrapper">
+					<a href="#!" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+					<!-- Título -->
+					<a class="page-title brand-logo">Barra de navegación</a>
+				</div>
+			</div>
+		</nav>
+		<!-- SideNavBar -->
+		<ul id="slide-out" class="side-nav fixed">
+			<li class="logo">
+				<img src="../../media/images/favicon-100x100.png" alt="Matlo.css">
+			</li>
+			<li><a class="waves-effect" href="../comenzar.html">Comenzar</a></li>
+			<li>
+				<ul class="collapsible">
+					<li>
+						<div class="collapsible-header no-padding"><a class="waves-effect">CSS</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../css/grid.html">Grid</a></li>
+								<li><a class="waves-effect" href="../css/contenido.html">Control de contenido</a></li>
+								<li><a class="waves-effect" href="../css/media.html">Media</a></li>
+								<li><a class="waves-effect" href="../css/sombra.html">Sombra</a></li>
+								<li><a class="waves-effect" href="../css/alertas.html">Alertas</a></li>
+								<li><a class="waves-effect" href="../css/tablas.html">Tablas</a></li>
+								<li><a class="waves-effect" href="../css/colores.html">Colores</a></li>
+								<li><a class="waves-effect" href="../css/tipografia.html">Tipografía</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header active no-padding"><a class="waves-effect">Componentes</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../componentes/botones.html">Botones</a></li>
+								<li><a class="waves-effect" href="../componentes/avance.html">Barras de avance</a></li>
+								<li><a class="waves-effect" href="../componentes/cartas.html">Cartas</a></li>
+								<li><a class="waves-effect" href="../componentes/pie.html">Pie de página</a></li>
+								<li><a class="waves-effect" href="../componentes/forms.html">Forms</a></li>
+								<li><a class="waves-effect" href="../componentes/iconos.html">Íconos</a></li>
+								<li class="active"><a class="waves-effect" href="../componentes/navegacion.html">Barra de navegación</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header no-padding"><a class="waves-effect">JavaScript</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../javascript/carrusel.html">Carrusel</a></li>
+								<li><a class="waves-effect" href="../javascript/plegables.html">Plegables</a></li>
+								<li><a class="waves-effect" href="../javascript/tooltips.html">Tooltips</a></li>
+								<li><a class="waves-effect" href="../javascript/dropdown.html">Dropdown</a></li>
+								<li><a class="waves-effect" href="../javascript/media.html">Media</a></li>
+								<li><a class="waves-effect" href="../javascript/modal.html">Modal</a></li>
+								<li><a class="waves-effect" href="../javascript/pushpinscrollspy.html">Pushpin y Scrollspy</a></li>
+								<li><a class="waves-effect" href="../javascript/lateral.html">Barra navegadora lateral</a></li>
+								<li><a class="waves-effect" href="../javascript/waves.html">Waves</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li><a class="waves-effect" href="../recursos.html">Recursos</a></li>
+		</ul>
+		
+	</header>
+
+	<main class="padd-on-large-300">
+		<!-- Content -->
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m9 l10">
+					<p class="caption col s12">La barra de navegación debe ser posicionada en el <code class="prettyprint">&ltheader></code> de tus páginas, dentro de un <code class="prettyprint">nav</code> <code class="prettyprint">tag</code> y un contenedor <code class="prettyprint">div</code>.<br>La barra tiene dos partes principales: el <code class="prettyprint">brand-logo</code> y los enlaces de navegación.</p>
+
+					<div id="derecha" class="section scrollspy">
+						<h3 class="header">Enlaces a la derecha</h3>
+						<p>Agrega <code class="prettyprint">right</code> al <code class="prettyprint">&ltul></code> que contiene los enlaces.</p>
+
+						<nav>
+							<div class="nav-wrapper">
+								<a href="#!" class="brand-logo">Logo</a>
+								<ul id="nav-mobile" class="right hide-on-med-and-down">
+									<li><a href="#!">CSS</a></li>
+									<li><a href="#!">Componentes</a></li>
+									<li><a href="#!">JavaScript</a></li>
+								</ul>
+							</div>
+						</nav>
+
+<pre class="prettyprint">&ltnav>
+    &ltdiv class="nav-wrapper">
+        &lta href="#!" class="brand-logo">Logo&lt/a>
+        &ltul id="nav-mobile" class="right hide-on-med-and-down">
+            &ltli>&lta href="#!">CSS&lt/a>&lt/li>
+            &ltli>&lta href="#!">Componentes&lt/a>&lt/li>
+            &ltli>&lta href="#!">JavaScript&lt/a>&lt/li>
+        &lt/ul>
+    &lt/div>
+&lt/nav></pre>
+
+					</div>
+
+					<div id="izquierda" class="section scrollspy">
+						<h3 class="header">Enlaces a la izquierda</h3>
+						<p>Agrega <code class="prettyprint">left</code> al <code class="prettyprint">&ltul></code> que contiene los enlaces.</p>
+
+						<nav>
+							<div class="nav-wrapper">
+								<a href="#!" class="brand-logo right">Logo</a>
+								<ul id="nav-mobile" class="left">
+									<li><a href="#!">CSS</a></li>
+									<li><a href="#!">Componentes</a></li>
+									<li><a href="#!">JavaScript</a></li>
+								</ul>
+							</div>
+						</nav>
+
+<pre class="prettyprint">&ltnav>
+    &ltdiv class="nav-wrapper">
+        &lta href="#!" class="brand-logo right">Logo&lt/a>
+        &ltul id="nav-mobile" class="left">
+            &ltli>&lta href="#!">CSS&lt/a>&lt/li>
+            &ltli>&lta href="#!">Componentes&lt/a>&lt/li>
+            &ltli>&lta href="#!">JavaScript&lt/a>&lt/li>
+        &lt/ul>
+    &lt/div>
+&lt/nav></pre>
+
+					</div>
+
+					<div id="centrar" class="section scrollspy">
+						<h3 class="header">Centrar el logo</h3>
+						<p>Por defecto, el logo se centra en pantallas de tablets y móviles. Si quieres que esté siempre sentrado, agrega <code class="prettyprint">center</code> a tu <code class="prettyprint">&lta class="brand-logo"></code>.</p>
+
+						<nav>
+							<div class="nav-wrapper">
+								<a href="#!" class="brand-logo center">Logo</a>
+								<ul id="nav-mobile" class="left">
+									<li><a href="#!">CSS</a></li>
+									<li><a href="#!">JavaScript</a></li>
+								</ul>
+							</div>
+						</nav>
+
+<pre class="prettyprint">&ltnav>
+    &ltdiv class="nav-wrapper">
+        &lta href="#!" class="brand-logo center">Logo&lt/a>
+        &ltul id="nav-mobile" class="left">
+            &ltli>&lta href="#!">CSS&lt/a>&lt/li>
+            &ltli>&lta href="#!">JavaScript&lt/a>&lt/li>
+        &lt/ul>
+    &lt/div>
+&lt/nav></pre>
+
+					</div>
+
+					<div id="activos" class="section scrollspy">
+						<h3 class="header">Items activos</h3>
+						<p>Agrega la clase <code class="prettyprint">active</code> a tus <code class="prettyprint">tags</code> <code class="prettyprint">&ltli></code> para indicar la página actual.</p>
+
+						<nav>
+							<div class="nav-wrapper">
+								<a href="#!" class="brand-logo left">Logo</a>
+								<ul id="nav-mobile" class="right">
+									<li><a href="#!">CSS</a></li>
+									<li class="active"><a href="#!">Componentes</a></li>
+									<li><a href="#!">JavaScript</a></li>
+								</ul>
+							</div>
+						</nav>
+
+<pre class="prettyprint">&ltnav>
+    &ltdiv class="nav-wrapper">
+        &lta href="#!" class="brand-logo left">Logo&lt/a>
+        &ltul id="nav-mobile" class="right">
+            &ltli>&lta href="#!">CSS&lt/a>&lt/li>
+            &ltli class="active">&lta href="#!">Componentes&lt/a>&lt/li>
+            &ltli>&lta href="#!">JavaScript&lt/a>&lt/li>
+        &lt/ul>
+    &lt/div>
+&lt/nav></pre>
+
+					</div>
+
+					<div id="fija" class="section scrollspy">
+						<h3 class="header">Barra fija</h3>
+						<p>Para fijar la barra tienes que agregar otro <code class="prettyprint">div</code> contenedor, con la clase <code class="prettyprint lang-html">navbar-fixed</code>. Esto empujará el resto de tu contenido.</p>
+
+<pre class="prettyprint">&ltdiv class="navbar-fixed">
+    &ltnav>
+        &ltdiv class="nav-wrapper">
+            &lta href="#!" class="brand-logo">Logo&lt/a>
+            &ltul class="right hide-on-med-and-down">
+                &ltli>&lta href="sass.html">Sass&lt/a>&lt/li>
+                &ltli>&lta href="badges.html">Components&lt/a>&lt/li>
+            &lt/ul>
+        &lt/div>
+    &lt/nav>
+&lt/div></pre>
+
+					</div>
+
+					<div id="dropdown" class="section scrollspy">
+						<h3 class="header">Menú dropdown</h3>
+						<p>Agrega la estructura de dropdown <code class="prettyprint">&ltul></code> a la página, luego, agrega un elemento que active el menú dropdown; para esto, entrega el <code class="prettyprint">id</code> de la estructura al atributo <code class="prettyprint">data-activates</code> del activador.</p>
+
+						<ul id="dropdown1" class="dropdown-content">
+							<li><a href="#!">Opción 1</a></li>
+							<li><a href="#!">Opción 2</a></li>
+							<li class="divider"></li>
+							<li><a href="#!">Otra opción</a></li>
+						</ul>
+						<nav>
+							<div class="nav-wrapper">
+								<a href="#!" class="brand-logo left">Logo</a>
+								<ul class="right">
+									<li><a href="#!">CSS</a></li>
+									<li><a href="#!">Componentes</a></li>
+									<!-- Dropdown Trigger -->
+									<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+								</ul>
+							</div>
+						</nav>
+
+<pre class="prettyprint">&ltul id="dropdown1" class="dropdown-content">
+    &ltli>&lta href="#!">Opción 1&lt/a>&lt/li>
+    &ltli>&lta href="#!">Opción 2&lt/a>&lt/li>
+    &ltli class="divider">&lt/li>
+    &ltli>&lta href="#!">Otra opción&lt/a>&lt/li>
+&lt/ul>
+&ltnav>
+    &ltdiv class="nav-wrapper">
+        &lta href="#!" class="brand-logo left">Logo&lt/a>
+        &ltul class="right">
+            &ltli>&lta href="#!">CSS&lt/a>&lt/li>
+            &ltli>&lta href="#!">Componentes&lt/a>&lt/li>
+            &lt!-- Dropdown Trigger -->
+            &ltli>&lta class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown&lti class="material-icons right">arrow_drop_down&lt/i>&lt/a>&lt/li>
+        &lt/ul>
+    &lt/div>
+&lt/nav></pre>
+
+						<p>Nota: Más sobre dropdowns en la sección <a class="waves-effect" href="../javascript/dropdown.html">Dropdown</a>.</p>
+
+					</div>
+
+					<div id="iconos" class="section scrollspy">
+						<h3 class="header">Íconos</h3>
+						<p>Puedes usar íconos.</p>
+
+						<nav>
+							<div class="nav-wrapper">
+								<a href="#!" class="brand-logo left"><i class="material-icons">cloud</i>Logo</a>
+								<ul class="right">
+									<li><a href="#!"><i class="material-icons">search</i></a></li>
+									<li><a href="#!"><i class="material-icons">view_module</i></a></li>
+									<li><a href="#!"><i class="material-icons">refresh</i></a></li>
+									<li><a href="#!"><i class="material-icons">more_vert</i></a></li>
+								</ul>
+							</div>
+						</nav>
+
+<pre class="prettyprint">&ltnav>
+    &ltdiv class="nav-wrapper">
+        &lta href="#!" class="brand-logo left">&lti class="material-icons">cloud&lt/i>Logo&lt/a>
+        &ltul class="right">
+            &ltli>&lta href="#!">&lti class="material-icons">search&lt/i>&lt/a>&lt/li>
+            &ltli>&lta href="#!">&lti class="material-icons">view_module&lt/i>&lt/a>&lt/li>
+            &ltli>&lta href="#!">&lti class="material-icons">refresh&lt/i>&lt/a>&lt/li>
+            &ltli>&lta href="#!">&lti class="material-icons">more_vert&lt/i>&lt/a>&lt/li>
+        &lt/ul>
+    &lt/div>
+&lt/nav></pre>
+
+						<nav>
+							<div class="nav-wrapper">
+								<a href="#!" class="brand-logo left">Logo</a>
+								<ul class="right">
+									<li><a href="#!"><i class="material-icons left">search</i>ícono izquierda</a></li>
+									<li><a href="#!"><i class="material-icons right">view_module</i>ícono derecha</a></li>
+								</ul>
+							</div>
+						</nav>
+
+<pre class="prettyprint">&ltnav>
+    &ltdiv class="nav-wrapper">
+        &lta href="#!" class="brand-logo left">Logo&lt/a>
+        &ltul class="right">
+            &ltli>&lta href="#!">&lti class="material-icons left">search&lt/i>ícono izquierda&lt/a>&lt/li>
+            &ltli>&lta href="#!">&lti class="material-icons right">view_module&lt/i>ícono derecha&lt/a>&lt/li>
+        &lt/ul>
+    &lt/div>
+&lt/nav></pre>
+
+					</div>
+
+					<div id="botones" class="section scrollspy">
+						<h3 class="header">Botones</h3>
+						<p>Puedes usar botones.</p>
+
+						<nav>
+							<div class="nav-wrapper">
+								<a href="#!" class="brand-logo left">Logo</a>
+								<ul class="right">
+									<li><a href="#!">Enlace</a></li>
+									<li><a class="waves-effect waves-light btn">Botón</a></li>
+									<li><a class="waves-effect waves-light btn-large">Botón grande</a></li>
+								</ul>
+							</div>
+						</nav>
+
+<pre class="prettyprint">&ltnav>
+    &ltdiv class="nav-wrapper">
+        &lta href="#!" class="brand-logo left">Logo&lt/a>
+        &ltul class="right">
+            &ltli>&lta href="#!">Enlace&lt/a>&lt/li>
+            &ltli>&lta class="waves-effect waves-light btn">Botón&lt/a>&lt/li>
+            &ltli>&lta class="waves-effect waves-light btn-large">Botón grande&lt/a>&lt/li>
+        &lt/ul>
+    &lt/div>
+&lt/nav></pre>
+
+					</div>
+
+					<div id="busqueda" class="section scrollspy">
+						<h3 class="header">Barra de búsqueda</h3>
+						<p>Puedes agregar un <code class="prettyprint">form</code> de búsqueda a la barra de navegación.</p>
+
+						<nav>
+							<div class="nav-wrapper">
+								<form>
+									<div class="input-field">
+										<input id="search" type="search" required>
+										<label for="search"><i class="material-icons">search</i></label>
+										<i class="material-icons">close</i>
+									</div>
+								</form>
+							</div>
+						</nav>
+
+<pre class="prettyprint">&ltnav>
+    &ltdiv class="nav-wrapper">
+        &ltform>
+            &ltdiv class="input-field">
+                &ltinput id="search" type="search" required>
+                &ltlabel for="search">&lti class="material-icons">search&lt/i>&lt/label>
+                &lti class="material-icons">close&lt/i>
+            &lt/div>
+        &lt/form>
+    &lt/div>
+&lt/nav></pre>
+
+					</div>
+
+					<div class="row center">
+						<div class="col s12 m6">
+							<a class="btn waves-effect waves-light" href="iconos.html">
+								<i class="material-icons left">chevron_left</i>íconos
+							</a>
+						</div>
+						<div class="col s12 m6">
+							<a class="btn waves-effect waves-light" href="../javascript/carrusel.html">
+								<i class="material-icons right">chevron_right</i>carrusel
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Table of contents -->
+				<div class="col hide-on-small-only m3 l2">
+					<div class="toc-wrapper">
+						<ul class="section table-of-contents">
+							<li><a href="#derecha">Enlaces a la derecha</a></li>
+							<li><a href="#izquierda">Enlaces a la izquierda</a></li>
+							<li><a href="#centrar">Centrar el logo</a></li>
+							<li><a href="#activos">Items activos</a></li>
+							<li><a href="#fija">Barra fija</a></li>
+							<li><a href="#dropdown">Menú dropdown</a></li>
+							<li><a href="#iconos">Íconos</a></li>
+							<li><a href="#botones">Botones</a></li>
+							<li><a href="#busqueda">Barra de búsqueda</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer class="page-footer padd-on-large-300">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="footer-text white-text">Matlo.css</h5>
+					<p class="footer-text grey-text text-lighten-4">Matlo.css (Material designed Learning Objects CSS) fue creado - usando Materialize - para el diseño gráfico de Objetos de Aprendizaje, como parte de un Trabajo de Titulación del <a class="footer-link" href="http://www.informatica.usach.cl/">Departamento de Ingeniería Informática</a> de la <a class="footer-link" href="http://www.usach.cl/">Universidad de Santiago de Chile</a>.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<ul>
+						<li><a class="btn github-btn grey lighten-3 black-text" target="_blank" href="https://github.com/David-Hans/Matlo.css">
+							<img class="github-img left" src="../../media/images/GitHub_32_black.png">
+							GitHub
+						</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="https://material.io/">Material Design</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="http://materializecss.com/">Materialize</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="https://github.com/google/code-prettify">Prettify</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© David Hans, 2016.
+				<a class="grey-text text-lighten-4 right" href="#!">MIT License</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../../../js/materialize.min.js"></script>
+	<!-- Import prettify -->
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+	<script type="text/javascript" src="../../js/init.js"></script>
+</body>
+</html>

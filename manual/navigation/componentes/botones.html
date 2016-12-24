@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+
+	<!-- Import Google Icon Font -->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Import matlo.css -->
+	<link href="../../../css/matlo.css" rel="stylesheet">
+	<!-- Import prettify.css -->
+	<link href="../../css/prettify.css" rel="stylesheet">
+
+	<link rel="icon" href="../../media/images/favicon-32x32.png" sizes="32x32"/>
+
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+	<meta name="robots" content=""/>
+	<meta name="author" content=""/>
+
+	<!-- Título -->
+	<title>Botones | Matlo.css</title>
+</head>
+
+<body>
+
+	<header class="padd-on-large-300">
+		<!-- Header -->
+		<nav class="top-nav">
+			<div class="container">
+				<div class="nav-wrapper">
+					<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+					<!-- Título -->
+					<a class="page-title brand-logo">Botones</a>
+				</div>
+			</div>
+		</nav>
+		<!-- SideNavBar -->
+		<ul id="slide-out" class="side-nav fixed">
+			<li class="logo">
+				<img src="../../media/images/favicon-100x100.png" alt="Matlo.css">
+			</li>
+			<li><a class="waves-effect" href="../comenzar.html">Comenzar</a></li>
+			<li>
+				<ul class="collapsible">
+					<li>
+						<div class="collapsible-header no-padding"><a class="waves-effect">CSS</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../css/grid.html">Grid</a></li>
+								<li><a class="waves-effect" href="../css/contenido.html">Control de contenido</a></li>
+								<li><a class="waves-effect" href="../css/media.html">Media</a></li>
+								<li><a class="waves-effect" href="../css/sombra.html">Sombra</a></li>
+								<li><a class="waves-effect" href="../css/alertas.html">Alertas</a></li>
+								<li><a class="waves-effect" href="../css/tablas.html">Tablas</a></li>
+								<li><a class="waves-effect" href="../css/colores.html">Colores</a></li>
+								<li><a class="waves-effect" href="../css/tipografia.html">Tipografía</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header active no-padding"><a class="waves-effect">Componentes</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li class="active"><a class="waves-effect" href="../componentes/botones.html">Botones</a></li>
+								<li><a class="waves-effect" href="../componentes/avance.html">Barras de avance</a></li>
+								<li><a class="waves-effect" href="../componentes/cartas.html">Cartas</a></li>
+								<li><a class="waves-effect" href="../componentes/pie.html">Pie de página</a></li>
+								<li><a class="waves-effect" href="../componentes/forms.html">Forms</a></li>
+								<li><a class="waves-effect" href="../componentes/iconos.html">Íconos</a></li>
+								<li><a class="waves-effect" href="../componentes/navegacion.html">Barra de navegación</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header no-padding"><a class="waves-effect">JavaScript</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../javascript/carrusel.html">Carrusel</a></li>
+								<li><a class="waves-effect" href="../javascript/plegables.html">Plegables</a></li>
+								<li><a class="waves-effect" href="../javascript/tooltips.html">Tooltips</a></li>
+								<li><a class="waves-effect" href="../javascript/dropdown.html">Dropdown</a></li>
+								<li><a class="waves-effect" href="../javascript/media.html">Media</a></li>
+								<li><a class="waves-effect" href="../javascript/modal.html">Modal</a></li>
+								<li><a class="waves-effect" href="../javascript/pushpinscrollspy.html">Pushpin y Scrollspy</a></li>
+								<li><a class="waves-effect" href="../javascript/lateral.html">Barra navegadora lateral</a></li>
+								<li><a class="waves-effect" href="../javascript/waves.html">Waves</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li><a class="waves-effect" href="../recursos.html">Recursos</a></li>
+		</ul>
+		
+	</header>
+
+	<main class="padd-on-large-300">
+		<!-- Content -->
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m9 l10">
+					<p class="caption col s12">Hay tres tipos de botones principales descritos en Material Design. El botón elevado implica acciones y le da relieve a una página principalmente plana; el flotante circular es para acciones muy importantes; y los botones planos son usualmente para elementos que ya tienen profundidad, como <a class="waves-effect" href="../componentes/cartas.html">Cartas</a> o <a class="waves-effect" href="../javascript/modal.html">Modales</a>.</p>
+
+					<div id="elevado" class="section scrollspy">
+						<h3 class="header">Elevado</h3>
+						<p></p>
+
+						<a class="waves-effect waves-light btn">botón</a>
+						<a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>botón</a>
+						<a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>botón</a>
+
+<pre class="prettyprint">&lta class="waves-effect waves-light btn">botón&lt/a>
+&lta class="waves-effect waves-light btn">&lti class="material-icons left">cloud&lt/i>botón&lt/a>
+&lta class="waves-effect waves-light btn">&lti class="material-icons right">cloud&lt/i>botón&lt/a></pre>
+
+						<p>Más información sobre <code class="prettyprint">waves</code> en la sección <a class="waves-effect" href="../javascript/waves.html">Waves</a> y sobre íconos en <a class="waves-effect" href="../componentes/iconos.html">Íconos</a>.</p>
+
+					</div>
+
+					<div id="flotando" class="section scrollspy">
+						<h3 class="header">Flotando</h3>
+						<p></p>
+
+						<a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+
+<pre class="prettyprint">&lta class="btn-floating btn-large waves-effect waves-light red">&lti class="material-icons">add&lt/i>&lt/a></pre>
+
+						<br>
+						<h4>Fixed action button (FAB)</h4>
+
+						<div style="position:relative;height:335px;border:1px solid #a6a6a6;">
+							<div class="fixed-action-btn" style="position:absolute;display:inline-block;right:24px;">
+								<a class="btn-floating btn-large red">
+									<i class="large material-icons">mode_edit</i>
+								</a>
+								<ul>
+									<li><a class="btn-floating red">
+										<i class="material-icons">insert_chart</i>
+									</a></li>
+									<li><a class="btn-floating yellow darken-1">
+										<i class="material-icons">format_quote</i>
+									</a></li>
+									<li><a class="btn-floating green">
+										<i class="material-icons">publish</i>
+									</a></li>
+									<li><a class="btn-floating blue">
+										<i class="material-icons">attach_file</i>
+									</a></li>
+								</ul>
+							</div>
+						</div>
+
+<pre class="prettyprint">&ltdiv>
+    &ltdiv class="fixed-action-btn">
+        &lta class="btn-floating btn-large red">
+            &lti class="large material-icons">mode_edit&lt/i>
+        &lt/a>
+        &ltul>
+            &ltli>&lta class="btn-floating red">
+                &lti class="material-icons">insert_chart&lt/i>
+            &lt/a>&lt/li>
+            &ltli>&lta class="btn-floating yellow darken-1">
+                &lti class="material-icons">format_quote&lt/i>
+            &lt/a>&lt/li>
+            &ltli>&lta class="btn-floating green">
+                &lti class="material-icons">publish&lt/i>
+            &lt/a>&lt/li>
+            &ltli>&lta class="btn-floating blue">
+                &lti class="material-icons">attach_file&lt/i>
+            &lt/a>&lt/li>
+        &lt/ul>
+    &lt/div>
+&lt/div></pre>
+
+						<p>Nota: El posicionamiento por defecto del <code class="prettyprint lang-html">fixed-action-button</code> es la esquina inferior derecha de la pantalla.</p>
+
+						<br>
+						<h4>FAB horizontal</h4>
+						<p>Sólo hay que agregar la clase <code class="prettyprint">horizontal</code> al FAB.</p>
+
+						<div style="position:relative;height:70px;">
+							<div class="fixed-action-btn horizontal" style="position:absolute;display:inline-block;right:24px;">
+								<a class="btn-floating btn-large red">
+									<i class="large material-icons">mode_edit</i>
+								</a>
+								<ul>
+									<li><a class="btn-floating red">
+										<i class="material-icons">insert_chart</i>
+									</a></li>
+									<li><a class="btn-floating yellow darken-1">
+										<i class="material-icons">format_quote</i>
+									</a></li>
+									<li><a class="btn-floating green">
+										<i class="material-icons">publish</i>
+									</a></li>
+									<li><a class="btn-floating blue">
+										<i class="material-icons">attach_file</i>
+									</a></li>
+								</ul>
+							</div>
+						</div>
+
+<pre class="prettyprint">&ltdiv>
+    &ltdiv class="fixed-action-btn horizontal">
+        &lta class="btn-floating btn-large red">
+            &lti class="large material-icons">mode_edit&lt/i>
+        &lt/a>
+        &ltul>
+            &ltli>&lta class="btn-floating red">
+                &lti class="material-icons">insert_chart&lt/i>
+            &lt/a>&lt/li>
+            &ltli>&lta class="btn-floating yellow darken-1">
+                &lti class="material-icons">format_quote&lt/i>
+            &lt/a>&lt/li>
+            &ltli>&lta class="btn-floating green">
+                &lti class="material-icons">publish&lt/i>
+            &lt/a>&lt/li>
+            &ltli>&lta class="btn-floating blue">
+                &lti class="material-icons">attach_file&lt/i>
+            &lt/a>&lt/li>
+        &lt/ul>
+    &lt/div>
+&lt/div></pre>
+
+					</div>
+
+					<div id="plano" class="section scrollspy">
+						<h3 class="header">Plano</h3>
+						<p>Los botones planos son usado para reducir el relieve excesivo.</p>
+
+						<a class="waves-effect waves-red btn-flat">BOTÓN</a>
+
+<pre class="prettyprint">&lta class="waves-effect waves-red btn-flat">BOTÓN&lt/a></pre>
+
+					</div>
+
+					<div id="enviar" class="section scrollspy">
+						<h3 class="header">Enviar</h3>
+						<p>Cuando uses botones para enviar un <code class="prettyprint">form</code>, usa un botón con <code class="prettyprint">type="submit"</code>.</p>
+
+						<button class="btn waves-effect waves-light" type="submit" name="action">
+							enviar
+							<i class="material-icons right">send</i>
+						</button>
+
+<pre class="prettyprint">&ltbutton class="btn waves-effect waves-light" type="submit" name="action">
+    enviar
+    &lti class="material-icons right">send&lt/i>
+&lt/button></pre>
+
+					</div>
+
+					<div id="grande" class="section scrollspy">
+						<h3 class="header">Grande</h3>
+						<p>Para botones que necesitan más atención usa <code class="prettyprint">btn-large</code>.</p>
+
+						<a class="waves-effect waves-light btn-large">botón</a>
+						<a class="waves-effect waves-light btn-large"><i class="material-icons left">cloud</i>botón</a>
+						<a class="waves-effect waves-light btn-large"><i class="material-icons right">cloud</i>botón</a>
+
+<pre class="prettyprint">&lta class="waves-effect waves-light btn-large">botón&lt/a>
+&lta class="waves-effect waves-light btn-large">&lti class="material-icons left">cloud&lt/i>botón&lt/a>
+&lta class="waves-effect waves-light btn-large">&lti class="material-icons right">cloud&lt/i>botón&lt/a></pre>
+
+					</div>
+
+					<div id="deshabilitado" class="section scrollspy">
+						<h3 class="header">Deshabilitado</h3>
+						<p>La clase <code class="prettyprint">disabled</code> funciona para todo tipo de botones.</p>
+
+						<a class="btn disabled">botón</a>
+						<a class="btn-floating disabled"><i class="material-icons">add</i></a>
+						<a class="btn-flat disabled">botón</a>
+						<a class="btn-large disabled">botón</a>
+
+<pre class="prettyprint">&lta class="btn disabled">botón&lt/a>
+&lta class="btn-floating disabled">&lti class="material-icons">add&lt/i>&lt/a>
+&lta class="btn-flat disabled">botón&lt/a>
+&lta class="btn-large disabled">botón&lt/a></pre>
+
+					</div>
+
+					<div class="row center">
+						<div class="col s12 m6">
+							<a class="btn waves-effect waves-light" href="../css/tipografia.html">
+								<i class="material-icons left">chevron_left</i>tipografía
+							</a>
+						</div>
+						<div class="col s12 m6">
+							<a class="btn waves-effect waves-light" href="avance.html">
+								<i class="material-icons right">chevron_right</i>Barras de avance
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Table of contents -->
+				<div class="col hide-on-small-only m3 l2">
+					<div class="toc-wrapper">
+						<ul class="section table-of-contents">
+							<li><a href="#elevado">Elevado</a></li>
+							<li><a href="#flotando">Flotando</a></li>
+							<li><a href="#plano">Plano</a></li>
+							<li><a href="#enviar">Enviar</a></li>
+							<li><a href="#grande">Grande</a></li>
+							<li><a href="#deshabilitado">Deshabilitado</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer class="page-footer padd-on-large-300">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="footer-text white-text">Matlo.css</h5>
+					<p class="footer-text grey-text text-lighten-4">Matlo.css (Material designed Learning Objects CSS) fue creado - usando Materialize - para el diseño gráfico de Objetos de Aprendizaje, como parte de un Trabajo de Titulación del <a class="footer-link" href="http://www.informatica.usach.cl/">Departamento de Ingeniería Informática</a> de la <a class="footer-link" href="http://www.usach.cl/">Universidad de Santiago de Chile</a>.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<ul>
+						<li><a class="btn github-btn grey lighten-3 black-text" target="_blank" href="https://github.com/David-Hans/Matlo.css">
+							<img class="github-img left" src="../../media/images/GitHub_32_black.png">
+							GitHub
+						</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="https://material.io/">Material Design</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="http://materializecss.com/">Materialize</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="https://github.com/google/code-prettify">Prettify</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© David Hans, 2016.
+				<a class="grey-text text-lighten-4 right" href="#">MIT License</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../../../js/materialize.min.js"></script>
+	<!-- Import prettify -->
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+	<script type="text/javascript" src="../../js/init.js"></script>
+</body>
+</html>

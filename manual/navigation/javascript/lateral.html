@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+
+	<!-- Import Google Icon Font -->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Import matlo.css -->
+	<link href="../../../css/matlo.css" rel="stylesheet">
+	<!-- Import prettify.css -->
+	<link href="../../css/prettify.css" rel="stylesheet">
+
+	<link rel="icon" href="../../media/images/favicon-32x32.png" sizes="32x32"/>
+
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+	<meta name="robots" content=""/>
+	<meta name="author" content=""/>
+
+	<!-- Título -->
+	<title>Barra lateral | Matlo.css</title>
+</head>
+
+<body>
+
+	<header class="padd-on-large-300">
+		<!-- Header -->
+		<nav class="top-nav">
+			<div class="container">
+				<div class="nav-wrapper">
+					<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+					<!-- Título -->
+					<a class="page-title brand-logo">Barra lateral</a>
+				</div>
+			</div>
+		</nav>
+		<!-- SideNavBar -->
+		<ul id="slide-out" class="side-nav fixed">
+			<li class="logo">
+				<img src="../../media/images/favicon-100x100.png" alt="Matlo.css">
+			</li>
+			<li><a class="waves-effect" href="../comenzar.html">Comenzar</a></li>
+			<li>
+				<ul class="collapsible">
+					<li>
+						<div class="collapsible-header no-padding"><a class="waves-effect">CSS</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../css/grid.html">Grid</a></li>
+								<li><a class="waves-effect" href="../css/contenido.html">Control de contenido</a></li>
+								<li><a class="waves-effect" href="../css/media.html">Media</a></li>
+								<li><a class="waves-effect" href="../css/sombra.html">Sombra</a></li>
+								<li><a class="waves-effect" href="../css/alertas.html">Alertas</a></li>
+								<li><a class="waves-effect" href="../css/tablas.html">Tablas</a></li>
+								<li><a class="waves-effect" href="../css/colores.html">Colores</a></li>
+								<li><a class="waves-effect" href="../css/tipografia.html">Tipografía</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header no-padding"><a class="waves-effect">Componentes</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../componentes/botones.html">Botones</a></li>
+								<li><a class="waves-effect" href="../componentes/avance.html">Barras de avance</a></li>
+								<li><a class="waves-effect" href="../componentes/cartas.html">Cartas</a></li>
+								<li><a class="waves-effect" href="../componentes/pie.html">Pie de página</a></li>
+								<li><a class="waves-effect" href="../componentes/forms.html">Forms</a></li>
+								<li><a class="waves-effect" href="../componentes/iconos.html">Íconos</a></li>
+								<li><a class="waves-effect" href="../componentes/navegacion.html">Barra de navegación</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header active no-padding"><a class="waves-effect">JavaScript</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../javascript/carrusel.html">Carrusel</a></li>
+								<li><a class="waves-effect" href="../javascript/plegables.html">Plegables</a></li>
+								<li><a class="waves-effect" href="../javascript/tooltips.html">Tooltips</a></li>
+								<li><a class="waves-effect" href="../javascript/dropdown.html">Dropdown</a></li>
+								<li><a class="waves-effect" href="../javascript/media.html">Media</a></li>
+								<li><a class="waves-effect" href="../javascript/modal.html">Modal</a></li>
+								<li><a class="waves-effect" href="../javascript/pushpinscrollspy.html">Pushpin y Scrollspy</a></li>
+								<li class="active"><a class="waves-effect" href="../javascript/lateral.html">Barra navegadora lateral</a></li>
+								<li><a class="waves-effect" href="../javascript/waves.html">Waves</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li><a class="waves-effect" href="../recursos.html">Recursos</a></li>
+		</ul>
+		
+	</header>
+
+	<main class="padd-on-large-300">
+		<!-- Content -->
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m9 l10">
+					<p class="caption col s12">Esta barra es un menú deslizante posicionado al un lado del contenido principal.</p>
+
+					<div id="basica" class="section scrollspy">
+						<h3 class="header">Básico</h3>
+
+						<h4>Ejemplo</h4>
+
+						<ul id="slide-out2" class="side-nav">
+							<li>
+								<div class="userView">
+									<div class="background">
+										<img src="../../media/images/550x251.jpg">
+									</div>
+									<a href="#!"><img class="circle" src="../../media/images/100x100.jpg"></a>
+									<a href="#!"><span class="white-text name">Nombre Apellido</span></a>
+									<a href="#!"><span class="white-text email">n.apellido@gmail.com</span></a>
+								</div>
+							</li>
+							<li><a href="#!"><i class="material-icons">cloud</i>Enlace con ícono</a></li>
+							<li><a href="#!">Segundo enlace</a></li>
+							<li><div class="divider"></div></li>
+							<li><a class="subheader">Subheader</a></li>
+							<li><a class="waves-effect" href="#!">Enlace con Waves</a></li>
+						</ul>
+						<a href="#" data-activates="slide-out2" class="button-collapse">
+							<i class="material-icons">menu</i>
+						</a>
+
+<pre class="prettyprint">&ltul id="slide-out2" class="side-nav">
+    &ltli>
+        &ltdiv class="userView">
+            &ltdiv class="background">
+                &ltimg src="../../media/images/550x251.jpg">
+            &lt/div>
+            &lta href="#!">&ltimg class="circle" src="../../media/images/100x100.jpg">&lt/a>
+            &lta href="#!">&ltspan class="white-text name">Nombre Apellido&lt/span>&lt/a>
+            &lta href="#!">&ltspan class="white-text email">n.apellido@gmail.com&lt/span>&lt/a>
+        &lt/div>
+    &lt/li>
+    &ltli>&lta href="#!">&lti class="material-icons">cloud&lt/i>Enlace con ícono&lt/a>&lt/li>
+    &ltli>&lta href="#!">Segundo enlace&lt/a>&lt/li>
+    &ltli>&ltdiv class="divider">&lt/div>&lt/li>
+    &ltli>&lta class="subheader">Subheader&lt/a>&lt/li>
+    &ltli>&lta class="waves-effect" href="#!">Enlace con Waves&lt/a>&lt/li>
+&lt/ul>
+
+&lta href="#" data-activates="slide-out2" class="button-collapse">
+    &lti class="material-icons">menu&lt/i>
+&lt/a></pre>
+
+						<br>
+						<h4>Inicialización</h4>
+
+<pre class="prettyprint">$(".button-collapse").sideNav();</pre>
+
+						<br>
+						<h4>Opciones</h4>
+
+						<table class="highlight">
+							<thead>
+								<tr>
+									<th>Nombre</th>
+									<th>Descripción</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>menuWidth</td>
+									<td>Ancho de la barra. (Default: 300)</td>
+								</tr>
+								<tr>
+									<td>edge</td>
+									<td>Origen horizontal (izquierda o derecha). (Default: 'left')</td>
+								</tr>
+								<tr>
+									<td>closeOnClick</td>
+									<td>Cierra la barra al hacer click en un <code class="prettyprint">&lta></code>. (Default: false)</td>
+								</tr>
+								<tr>
+									<td>draggable</td>
+									<td>Si se puede arrastrar para abrir rel menú (touch-screen). (Default: true)</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<br>
+						<h4>Métodos JQuery</h4>
+						<p>Ofrecemos los siguientes métodos para manipular la barra lateral.</p>
+
+<pre class="prettyprint">// Mostrar barra
+  $('.button-collapse').sideNav('show');
+  // Esconder barra
+  $('.button-collapse').sideNav('hide');
+  // Destruir barra
+  $('.button-collapse').sideNav('destroy');</pre>
+
+					</div>
+
+					<div id="dropdown" class="section scrollspy">
+						<h3 class="header">Dropdown</h3>
+						<p>Puedes agregar elementos plegables a tu menú</p>
+
+						<ul id="slide-out3" class="side-nav">
+							<li><a href="#!">Primer enlace</a></li>
+							<li><a href="#!">Segundo enlace</a></li>
+							<li class="no-padding">
+								<ul class="collapsible collapsible-accordion">
+									<li>
+										<a class="collapsible-header">Dropdown<i class="material-icons right">arrow_drop_down</i></a>
+										<div class="collapsible-body">
+											<ul>
+												<li><a href="#!">Primera</a></li>
+												<li><a href="#!">Segunda</a></li>
+												<li><a href="#!">Tercera</a></li>
+												<li><a href="#!">Cuarta</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<a href="#" data-activates="slide-out3" class="button-collapse">
+							<i class="material-icons">menu</i>
+						</a>
+
+<pre class="prettyprint">&ltul id="slide-out3" class="side-nav">
+    &ltli>&lta href="#!">Primer enlace&lt/a>&lt/li>
+    &ltli>&lta href="#!">Segundo enlace&lt/a>&lt/li>
+    &ltli class="no-padding">
+        &ltul class="collapsible collapsible-accordion">
+            &ltli>
+                &lta class="collapsible-header">Dropdown&lti class="material-icons right">arrow_drop_down&lt/i>&lt/a>
+                &ltdiv class="collapsible-body">
+                    &ltul>
+                        &ltli>&lta href="#!">Primera&lt/a>&lt/li>
+                        &ltli>&lta href="#!">Segunda&lt/a>&lt/li>
+                        &ltli>&lta href="#!">Tercera&lt/a>&lt/li>
+                        &ltli>&lta href="#!">Cuarta&lt/a>&lt/li>
+                    &lt/ul>
+                &lt/div>
+            &lt/li>
+        &lt/ul>
+    &lt/li>
+&lt/ul>
+
+&lta href="#" data-activates="slide-out3" class="button-collapse">
+    &lti class="material-icons">menu&lt/i>
+&lt/a></pre>
+
+					</div>
+
+					<div id="fija" class="section scrollspy">
+						<h3 class="header">Fija</h3>
+						<p>Puedes agregar la clase <code class="prettyprint lang-html">fixed</code> para que la barra quede abierta y fija en pantallas de escritorio; y se esconda en pantallas más pequeñas. La barra de navegación lateral de esta página (a la izquierda) es un ejemplo de esto.</p>
+
+<pre class="prettyprint">&ltul id="slide-out" class="side-nav fixed">
+    &ltli>&lta href="#!">Enlace 1&lt/a>&lt/li>
+    &ltli>&lta href="#!">Enlace 2&lt/a>&lt/li>
+&lt/ul>
+&lta href="#" data-activates="slide-out" class="button-collapse">
+    &lti class="material-icons">menu&lt/i>
+&lt/a></pre>
+
+						<p>Si quieres usar este tipo de barra, tendras que empujar tu contenido principal una cantidad de pixeles igual a el ancho de la barra, para pantallas de escritorio. A continuación, un ejemplo de cómo hacer esto con CSS.</p>
+
+<pre class="prettyprint">header, main, footer{
+    padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+        padding-left: 0;
+    }
+}</pre>
+
+					</div>
+
+					<div class="row center">
+						<div class="col s12 m6">
+							<a class="btn waves-effect waves-light" href="pushpinscrollspy.html">
+								<i class="material-icons left">chevron_left</i>pushpin y scrollspy
+							</a>
+						</div>
+						<div class="col s12 m6">
+							<a class="btn waves-effect waves-light" href="waves.html">
+								<i class="material-icons right">chevron_right</i>waves
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Table of contents -->
+				<div class="col hide-on-small-only m3 l2">
+					<div class="toc-wrapper">
+						<ul class="section table-of-contents">
+							<li><a href="#basica">Básico</a></li>
+							<li><a href="#dropdown">Dropdown</a></li>
+							<li><a href="#completa">Pantalla completa</a></li>
+							<li><a href="#fija">Fija</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer class="page-footer padd-on-large-300">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="footer-text white-text">Matlo.css</h5>
+					<p class="footer-text grey-text text-lighten-4">Matlo.css (Material designed Learning Objects CSS) fue creado - usando Materialize - para el diseño gráfico de Objetos de Aprendizaje, como parte de un Trabajo de Titulación del <a class="footer-link" href="http://www.informatica.usach.cl/">Departamento de Ingeniería Informática</a> de la <a class="footer-link" href="http://www.usach.cl/">Universidad de Santiago de Chile</a>.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<ul>
+						<li><a class="btn github-btn grey lighten-3 black-text" target="_blank" href="https://github.com/David-Hans/Matlo.css">
+							<img class="github-img left" src="../../media/images/GitHub_32_black.png">
+							GitHub
+						</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="https://material.io/">Material Design</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="http://materializecss.com/">Materialize</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="https://github.com/google/code-prettify">Prettify</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© David Hans, 2016.
+				<a class="grey-text text-lighten-4 right" href="#">MIT License</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../../../js/materialize.min.js"></script>
+	<!-- Import prettify -->
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+	<script type="text/javascript" src="../../js/init.js"></script>
+</body>
+</html>

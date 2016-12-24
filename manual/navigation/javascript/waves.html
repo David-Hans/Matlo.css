@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+
+	<!-- Import Google Icon Font -->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Import matlo.css -->
+	<link href="../../../css/matlo.css" rel="stylesheet">
+	<!-- Import prettify.css -->
+	<link href="../../css/prettify.css" rel="stylesheet">
+
+	<link rel="icon" href="../../media/images/favicon-32x32.png" sizes="32x32"/>
+
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+	<meta name="robots" content=""/>
+	<meta name="author" content=""/>
+
+	<!-- Título -->
+	<title>Waves | Matlo.css</title>
+</head>
+
+<body>
+
+	<header class="padd-on-large-300">
+		<!-- Header -->
+		<nav class="top-nav">
+			<div class="container">
+				<div class="nav-wrapper">
+					<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+					<!-- Título -->
+					<a class="page-title brand-logo">Waves</a>
+				</div>
+			</div>
+		</nav>
+		<!-- SideNavBar -->
+		<ul id="slide-out" class="side-nav fixed">
+			<li class="logo">
+				<img src="../../media/images/favicon-100x100.png" alt="Matlo.css">
+			</li>
+			<li><a class="waves-effect" href="../comenzar.html">Comenzar</a></li>
+			<li>
+				<ul class="collapsible">
+					<li>
+						<div class="collapsible-header no-padding"><a class="waves-effect">CSS</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../css/grid.html">Grid</a></li>
+								<li><a class="waves-effect" href="../css/contenido.html">Control de contenido</a></li>
+								<li><a class="waves-effect" href="../css/media.html">Media</a></li>
+								<li><a class="waves-effect" href="../css/sombra.html">Sombra</a></li>
+								<li><a class="waves-effect" href="../css/alertas.html">Alertas</a></li>
+								<li><a class="waves-effect" href="../css/tablas.html">Tablas</a></li>
+								<li><a class="waves-effect" href="../css/colores.html">Colores</a></li>
+								<li><a class="waves-effect" href="../css/tipografia.html">Tipografía</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header no-padding"><a class="waves-effect">Componentes</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../componentes/botones.html">Botones</a></li>
+								<li><a class="waves-effect" href="../componentes/avance.html">Barras de avance</a></li>
+								<li><a class="waves-effect" href="../componentes/cartas.html">Cartas</a></li>
+								<li><a class="waves-effect" href="../componentes/pie.html">Pie de página</a></li>
+								<li><a class="waves-effect" href="../componentes/forms.html">Forms</a></li>
+								<li><a class="waves-effect" href="../componentes/iconos.html">Íconos</a></li>
+								<li><a class="waves-effect" href="../componentes/navegacion.html">Barra de navegación</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header active no-padding"><a class="waves-effect">JavaScript</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../javascript/carrusel.html">Carrusel</a></li>
+								<li><a class="waves-effect" href="../javascript/plegables.html">Plegables</a></li>
+								<li><a class="waves-effect" href="../javascript/tooltips.html">Tooltips</a></li>
+								<li><a class="waves-effect" href="../javascript/dropdown.html">Dropdown</a></li>
+								<li><a class="waves-effect" href="../javascript/media.html">Media</a></li>
+								<li><a class="waves-effect" href="../javascript/modal.html">Modal</a></li>
+								<li><a class="waves-effect" href="../javascript/pushpinscrollspy.html">Pushpin y Scrollspy</a></li>
+								<li><a class="waves-effect" href="../javascript/lateral.html">Barra navegadora lateral</a></li>
+								<li class="active"><a class="waves-effect" href="../javascript/waves.html">Waves</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li><a class="waves-effect" href="../recursos.html">Recursos</a></li>
+		</ul>
+		
+	</header>
+
+	<main class="padd-on-large-300">
+		<!-- Content -->
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m9 l10">
+					<p class="caption col s12">Waves es una libraría que permite crear el efecto de tinta de Material Design.</p>
+
+					<div id="basico" class="section scrollspy">
+						<h3 class="header">Básico</h3>
+						<p>Para aplicar Waves, sólo tienes que agregar la clase <code class="prettyprint">waves-effect</code>, también puedes agregar color al efecto.</p>
+
+						<a href="#!" class="btn-floating btn-large waves-effect waves-light">
+							<i class="material-icons">add</i>
+						</a>
+						<a href="#!" class="btn waves-effect orange">Send</a>
+						<a href="#!" class="btn waves-effect waves-orange">Send</a>
+
+<pre class="prettyprint">&lta href="#!" class="btn-floating btn-large waves-effect waves-light">
+    &lti class="material-icons">add&lt/i>
+&lt/a>
+&lta href="#!" class="btn waves-effect orange">Send&lt/a>
+&lta href="#!" class="btn waves-effect waves-orange">Send&lt/a></pre>
+
+						<br>
+						<h4>Colores básicos</h4>
+
+						<div class="row">
+							<div class="col s4">
+								<a href="#!" class="btn waves-effect white black-text">
+									Default
+								</a>
+							</div>
+							<div class="col s4">
+								<a href="#!" class="btn waves-effect white-text waves-light">
+									waves-light
+								</a>
+							</div>
+							<div class="col s4">
+								<a href="#!" class="btn waves-effect waves-red white black-text">
+									waves-red
+								</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s4">
+								<a href="#!" class="btn waves-effect waves-yellow white black-text">
+									waves-yellow
+								</a>
+							</div>
+							<div class="col s4">
+								<a href="#!" class="btn waves-effect waves-orange white black-text">
+									waves-orange
+								</a>
+							</div>
+							<div class="col s4">
+								<a href="#!" class="btn waves-effect waves-purple white black-text">
+									waves-purple
+								</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s4">
+								<a href="#!" class="btn waves-effect waves-green white black-text">
+									waves-green
+								</a>
+							</div>
+							<div class="col s4">
+								<a href="#!" class="btn waves-effect waves-teal white black-text">
+									waves-teal
+								</a>
+							</div>
+						</div>
+
+<pre class="prettyprint">&ltdiv class="row">
+    &ltdiv class="col s4">
+        &lta href="#!" class="btn waves-effect white black-text">
+            Default
+        &lt/a>
+    &lt/div>
+    &ltdiv class="col s4">
+        &lta href="#!" class="btn waves-effect white-text waves-light">
+            waves-light
+        &lt/a>
+    &lt/div>
+    &ltdiv class="col s4">
+        &lta href="#!" class="btn waves-effect waves-red white black-text">
+            waves-red
+        &lt/a>
+    &lt/div>
+&lt/div>
+&ltdiv class="row">
+    &ltdiv class="col s4">
+        &lta href="#!" class="btn waves-effect waves-yellow white black-text">
+            waves-yellow
+        &lt/a>
+    &lt/div>
+    &ltdiv class="col s4">
+        &lta href="#!" class="btn waves-effect waves-orange white black-text">
+            waves-orange
+        &lt/a>
+    &lt/div>
+    &ltdiv class="col s4">
+        &lta href="#!" class="btn waves-effect waves-purple white black-text">
+            waves-purple
+        &lt/a>
+    &lt/div>
+&lt/div>
+&ltdiv class="row">
+	&ltdiv class="col s4">
+		&lta href="#!" class="btn waves-effect waves-green white black-text">
+            waves-green
+		&lt/a>
+	&lt/div>
+	&ltdiv class="col s4">
+		&lta href="#!" class="btn waves-effect waves-teal white black-text">
+            waves-teal
+		&lt/a>
+	&lt/div>
+&lt/div></pre>
+
+					</div>
+
+					<div id="personalizar" class="section scrollspy">
+						<h3 class="header">Personalizar</h3>
+						<p>Puedes hacer tus propios colores, con un poco de CSS.</p>
+
+<pre class="prettyprint">/*
+Cuando crees tu CSS, cambia "brown"
+y el valor rgba, por el color que
+desees (manteniendo el alpha)
+*/
+.waves-effect.waves-brown .waves-ripple {
+    /* El valor alpha permite que el texto
+    y fondo del botón se puedan ver. */
+    background-color: rgba(121, 85, 72, 0.65);
+}</pre>
+
+					</div>
+
+					<div id="circulo" class="section scrollspy">
+						<h3 class="header">Círculo</h3>
+						<p>Si quieres que Waves forme círculos, puedes agregar la clase <code class="prettyprint">waves-circle</code>.</p>
+
+						<a href="#!" class="btn-floating btn-large waves-effect waves-circle waves-light">
+							<i class="material-icons">add</i>
+						</a>
+
+<pre class="prettyprint">&lta href="#!" class="btn-floating btn-large waves-effect waves-circle waves-light">
+    &lti class="material-icons">add&lt/i>
+&lt/a>
+</pre>
+
+					</div>
+
+					<div class="row center">
+						<div class="col s12 m6">
+							<a class="btn waves-effect waves-light" href="lateral.html">
+								<i class="material-icons left">chevron_left</i>barra navegadora lateral
+							</a>
+						</div>
+						<div class="col s12 m6">
+							<a class="btn waves-effect waves-light" href="../recursos.html">
+								<i class="material-icons right">chevron_right</i>recursos
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Table of contents -->
+				<div class="col hide-on-small-only m3 l2">
+					<div class="toc-wrapper">
+						<ul class="section table-of-contents">
+							<li><a href="#basico">Básico</a></li>
+							<li><a href="#personalizar">Personalizar</a></li>
+							<li><a href="#circulo">Círculo</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer class="page-footer padd-on-large-300">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="footer-text white-text">Matlo.css</h5>
+					<p class="footer-text grey-text text-lighten-4">Matlo.css (Material designed Learning Objects CSS) fue creado - usando Materialize - para el diseño gráfico de Objetos de Aprendizaje, como parte de un Trabajo de Titulación del <a class="footer-link" href="http://www.informatica.usach.cl/">Departamento de Ingeniería Informática</a> de la <a class="footer-link" href="http://www.usach.cl/">Universidad de Santiago de Chile</a>.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<ul>
+						<li><a class="btn github-btn grey lighten-3 black-text" target="_blank" href="https://github.com/David-Hans/Matlo.css">
+							<img class="github-img left" src="../../media/images/GitHub_32_black.png">
+							GitHub
+						</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="https://material.io/">Material Design</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="http://materializecss.com/">Materialize</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="https://github.com/google/code-prettify">Prettify</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© David Hans, 2016.
+				<a class="grey-text text-lighten-4 right" href="#">MIT License</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../../../js/materialize.min.js"></script>
+	<!-- Import prettify -->
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+	<script type="text/javascript" src="../../js/init.js"></script>
+</body>
+</html>

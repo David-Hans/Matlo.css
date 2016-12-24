@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+
+	<!-- Import Google Icon Font -->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Import matlo.css -->
+	<link href="../../../css/matlo.css" rel="stylesheet">
+	<!-- Import prettify.css -->
+	<link href="../../css/prettify.css" rel="stylesheet">
+
+	<link rel="icon" href="../../media/images/favicon-32x32.png" sizes="32x32"/>
+
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+	<meta name="robots" content=""/>
+	<meta name="author" content=""/>
+
+	<!-- Título -->
+	<title>Colores | Matlo.css</title>
+</head>
+
+<body>
+
+	<header class="padd-on-large-300">
+		<!-- Header -->
+		<nav class="top-nav">
+			<div class="container">
+				<div class="nav-wrapper">
+					<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+					<!-- Título -->
+					<a class="page-title brand-logo">Colores</a>
+				</div>
+			</div>
+		</nav>
+		<!-- SideNavBar -->
+		<ul id="slide-out" class="side-nav fixed">
+			<li class="logo">
+				<img src="../../media/images/favicon-100x100.png" alt="Matlo.css">
+			</li>
+			<li><a class="waves-effect" href="../comenzar.html">Comenzar</a></li>
+			<li>
+				<ul class="collapsible">
+					<li>
+						<div class="collapsible-header active no-padding"><a class="waves-effect">CSS</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../css/grid.html">Grid</a></li>
+								<li><a class="waves-effect" href="../css/contenido.html">Control de contenido</a></li>
+								<li><a class="waves-effect" href="../css/media.html">Media</a></li>
+								<li><a class="waves-effect" href="../css/sombra.html">Sombra</a></li>
+								<li><a class="waves-effect" href="../css/alertas.html">Alertas</a></li>
+								<li><a class="waves-effect" href="../css/tablas.html">Tablas</a></li>
+								<li class="active"><a class="waves-effect" href="../css/colores.html">Colores</a></li>
+								<li><a class="waves-effect" href="../css/tipografia.html">Tipografía</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header no-padding"><a class="waves-effect">Componentes</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../componentes/botones.html">Botones</a></li>
+								<li><a class="waves-effect" href="../componentes/avance.html">Barras de avance</a></li>
+								<li><a class="waves-effect" href="../componentes/cartas.html">Cartas</a></li>
+								<li><a class="waves-effect" href="../componentes/pie.html">Pie de página</a></li>
+								<li><a class="waves-effect" href="../componentes/forms.html">Forms</a></li>
+								<li><a class="waves-effect" href="../componentes/iconos.html">Íconos</a></li>
+								<li><a class="waves-effect" href="../componentes/navegacion.html">Barra de navegación</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header no-padding"><a class="waves-effect">JavaScript</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../javascript/carrusel.html">Carrusel</a></li>
+								<li><a class="waves-effect" href="../javascript/plegables.html">Plegables</a></li>
+								<li><a class="waves-effect" href="../javascript/tooltips.html">Tooltips</a></li>
+								<li><a class="waves-effect" href="../javascript/dropdown.html">Dropdown</a></li>
+								<li><a class="waves-effect" href="../javascript/media.html">Media</a></li>
+								<li><a class="waves-effect" href="../javascript/modal.html">Modal</a></li>
+								<li><a class="waves-effect" href="../javascript/pushpinscrollspy.html">Pushpin y Scrollspy</a></li>
+								<li><a class="waves-effect" href="../javascript/lateral.html">Barra navegadora lateral</a></li>
+								<li><a class="waves-effect" href="../javascript/waves.html">Waves</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li><a class="waves-effect" href="../recursos.html">Recursos</a></li>
+		</ul>
+		
+	</header>
+
+	<main class="padd-on-large-300">
+		<!-- Content -->
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m9 l10">
+					<p class="caption col s12">Todos los colores de Matlo.css están basados en los colores de <a target="_blank" href="https://material.io/guidelines/style/color.html">Material Design</a>. Cada uno está definido por la clase de su color base y una clase opcional de variación (más claro, oscuro o de acento).</p>
+
+					<div id="uso" class="section scrollspy">
+						<h3 class="header">Uso</h3>
+						<h4>Fondo</h4>
+						<p>Para agregar color de fondo basta con que agregues el nombre del color y el nivel de claridad u opacidad que prefieres.</p>
+
+						<div class="blue lighten-2 center-align"><span class="flow-text">Texto con fondo azul, claro 2</span></div>
+
+<pre class="prettyprint">&ltdiv class="blue lighten-2 center-align">Texto con fondo azul, claro 2&lt/div></pre>
+
+						<h4>Texto</h4>
+
+						<div class="center-align"><span class="flow-text blue-text darken-5"><b>Texto azul, oscuro 5</b></span></div>
+
+<pre class="prettyprint">&ltdiv>&ltspan class="blue-text darken-5">&ltb>Texto azul, oscuro 5&lt/b>&lt/span>&lt/div></pre>
+
+					</div>
+
+					<div id="paleta" class="section scrollspy">
+						<h3 class="header">Paleta</h3>
+						<p>Paleta completa de colores de <a href="https://material.io/guidelines/style/color.html" target="_blank">Material Design</a>.</p>
+
+						<div class="row dynamic-color center-align">
+							<div class="col s12 m6 l4">
+								<div class="red lighten-5">red lighten-5</div>
+								<div class="red lighten-4">red lighten-4</div>
+								<div class="red lighten-3">red lighten-3</div>
+								<div class="red lighten-2">red lighten-2</div>
+								<div class="red lighten-1 white-text">red lighten-1</div>
+								<div class="red white-text">red</div>
+								<div class="red darken-1 white-text">red darken-1</div>
+								<div class="red darken-2 white-text">red darken-2</div>
+								<div class="red darken-3 white-text">red darken-3</div>
+								<div class="red darken-4 white-text">red darken-4</div>
+								<div class="red accent-1">red accent-1</div>
+								<div class="red accent-2 white-text">red accent-2</div>
+								<div class="red accent-3 white-text">red accent-3</div>
+								<div class="red accent-4 white-text">red accent-4</div>
+							</div>
+							<div class="col s12 m6 l4">
+								<div class="pink lighten-5">pink lighten-5</div>
+								<div class="pink lighten-4">pink lighten-4</div>
+								<div class="pink lighten-3">pink lighten-3</div>
+								<div class="pink lighten-2 white-text">pink lighten-2</div>
+								<div class="pink lighten-1 white-text">pink lighten-1</div>
+								<div class="pink white-text">pink</div>
+								<div class="pink darken-1 white-text">pink darken-1</div>
+								<div class="pink darken-2 white-text">pink darken-2</div>
+								<div class="pink darken-3 white-text">pink darken-3</div>
+								<div class="pink darken-4 white-text">pink darken-4</div>
+								<div class="pink accent-1">pink accent-1</div>
+								<div class="pink accent-2 white-text">pink accent-2</div>
+								<div class="pink accent-3 white-text">pink accent-3</div>
+								<div class="pink accent-4 white-text">pink accent-4</div>
+							</div>
+							<div class="col s12 m6 l4">
+								<div class="purple lighten-5">purple lighten-5</div>
+								<div class="purple lighten-4">purple lighten-4</div>
+								<div class="purple lighten-3">purple lighten-3</div>
+								<div class="purple lighten-2 white-text">purple lighten-2</div>
+								<div class="purple lighten-1 white-text">purple lighten-1</div>
+								<div class="purple white-text">purple</div>
+								<div class="purple darken-1 white-text">purple darken-1</div>
+								<div class="purple darken-2 white-text">purple darken-2</div>
+								<div class="purple darken-3 white-text">purple darken-3</div>
+								<div class="purple darken-4 white-text">purple darken-4</div>
+								<div class="purple accent-1">purple accent-1</div>
+								<div class="purple accent-2 white-text">purple accent-2</div>
+								<div class="purple accent-3 white-text">purple accent-3</div>
+								<div class="purple accent-4 white-text">purple accent-4</div>
+							</div>
+							<div class="col s12 m6 l4">
+								<div class="deep-purple lighten-5">deep-purple lighten-5</div>
+								<div class="deep-purple lighten-4">deep-purple lighten-4</div>
+								<div class="deep-purple lighten-3">deep-purple lighten-3</div>
+								<div class="deep-purple lighten-2 white-text">deep-purple lighten-2</div>
+								<div class="deep-purple lighten-1 white-text">deep-purple lighten-1</div>
+								<div class="deep-purple white-text">deep-purple</div>
+								<div class="deep-purple darken-1 white-text">deep-purple darken-1</div>
+								<div class="deep-purple darken-2 white-text">deep-purple darken-2</div>
+								<div class="deep-purple darken-3 white-text">deep-purple darken-3</div>
+								<div class="deep-purple darken-4 white-text">deep-purple darken-4</div>
+								<div class="deep-purple accent-1">deep-purple accent-1</div>
+								<div class="deep-purple accent-2 white-text">deep-purple accent-2</div>
+								<div class="deep-purple accent-3 white-text">deep-purple accent-3</div>
+								<div class="deep-purple accent-4 white-text">deep-purple accent-4</div>
+							</div>
+							<div class="col s12 m6 l4">
+								<div class="indigo lighten-5">indigo lighten-5</div>
+								<div class="indigo lighten-4">indigo lighten-4</div>
+								<div class="indigo lighten-3">indigo lighten-3</div>
+								<div class="indigo lighten-2 white-text">indigo lighten-2</div>
+								<div class="indigo lighten-1 white-text">indigo lighten-1</div>
+								<div class="indigo white-text">indigo</div>
+								<div class="indigo darken-1 white-text">indigo darken-1</div>
+								<div class="indigo darken-2 white-text">indigo darken-2</div>
+								<div class="indigo darken-3 white-text">indigo darken-3</div>
+								<div class="indigo darken-4 white-text">indigo darken-4</div>
+								<div class="indigo accent-1">indigo accent-1</div>
+								<div class="indigo accent-2 white-text">indigo accent-2</div>
+								<div class="indigo accent-3 white-text">indigo accent-3</div>
+								<div class="indigo accent-4 white-text">indigo accent-4</div>
+							</div>
+							<div class="col s12 m6 l4">
+								<div class="blue lighten-5">blue lighten-5</div>
+								<div class="blue lighten-4">blue lighten-4</div>
+								<div class="blue lighten-3">blue lighten-3</div>
+								<div class="blue lighten-2">blue lighten-2</div>
+								<div class="blue lighten-1">blue lighten-1</div>
+								<div class="blue white-text">blue</div>
+								<div class="blue darken-1 white-text">blue darken-1</div>
+								<div class="blue darken-2 white-text">blue darken-2</div>
+								<div class="blue darken-3 white-text">blue darken-3</div>
+								<div class="blue darken-4 white-text">blue darken-4</div>
+								<div class="blue accent-1">blue accent-1</div>
+								<div class="blue accent-2 white-text">blue accent-2</div>
+								<div class="blue accent-3 white-text">blue accent-3</div>
+								<div class="blue accent-4 white-text">blue accent-4</div>
+							</div>
+							<div class="col s12 m6 l4">
+								<div class="light-blue lighten-5">light-blue lighten-5</div>
+								<div class="light-blue lighten-4">light-blue lighten-4</div>
+								<div class="light-blue lighten-3">light-blue lighten-3</div>
+								<div class="light-blue lighten-2">light-blue lighten-2</div>
+								<div class="light-blue lighten-1">light-blue lighten-1</div>
+								<div class="light-blue">light-blue</div>
+								<div class="light-blue darken-1 white-text">light-blue darken-1</div>
+								<div class="light-blue darken-2 white-text">light-blue darken-2</div>
+								<div class="light-blue darken-3 white-text">light-blue darken-3</div>
+								<div class="light-blue darken-4 white-text">light-blue darken-4</div>
+								<div class="light-blue accent-1">light-blue accent-1</div>
+								<div class="light-blue accent-2">light-blue accent-2</div>
+								<div class="light-blue accent-3">light-blue accent-3</div>
+								<div class="light-blue accent-4 white-text">light-blue accent-4</div>
+							</div>
+							<div class="col s12 m6 l4">
+								<div class="cyan lighten-5">cyan lighten-5</div>
+								<div class="cyan lighten-4">cyan lighten-4</div>
+								<div class="cyan lighten-3">cyan lighten-3</div>
+								<div class="cyan lighten-2">cyan lighten-2</div>
+								<div class="cyan lighten-1">cyan lighten-1</div>
+								<div class="cyan">cyan</div>
+								<div class="cyan darken-1">cyan darken-1</div>
+								<div class="cyan darken-2 white-text">cyan darken-2</div>
+								<div class="cyan darken-3 white-text">cyan darken-3</div>
+								<div class="cyan darken-4 white-text">cyan darken-4</div>
+								<div class="cyan accent-1">cyan accent-1</div>
+								<div class="cyan accent-2">cyan accent-2</div>
+								<div class="cyan accent-3">cyan accent-3</div>
+								<div class="cyan accent-4">cyan accent-4</div>
+							</div>
+							<div class="col s12 m6 l4">
+								<div class="teal lighten-5">teal lighten-5</div>
+								<div class="teal lighten-4">teal lighten-4</div>
+								<div class="teal lighten-3">teal lighten-3</div>
+								<div class="teal lighten-2">teal lighten-2</div>
+								<div class="teal lighten-1">teal lighten-1</div>
+								<div class="teal white-text">teal</div>
+								<div class="teal darken-1 white-text">teal darken-1</div>
+								<div class="teal darken-2 white-text">teal darken-2</div>
+								<div class="teal darken-3 white-text">teal darken-3</div>
+								<div class="teal darken-4 white-text">teal darken-4</div>
+								<div class="teal accent-1">teal accent-1</div>
+								<div class="teal accent-2">teal accent-2</div>
+								<div class="teal accent-3">teal accent-3</div>
+								<div class="teal accent-4">teal accent-4</div>
+							</div>
+							<div class="col s12 m6 l4">
+								<div class="green lighten-5">green lighten-5</div>
+								<div class="green lighten-4">green lighten-4</div>
+								<div class="green lighten-3">green lighten-3</div>
+								<div class="green lighten-2">green lighten-2</div>
+								<div class="green lighten-1">green lighten-1</div>
+								<div class="green">green</div>
+								<div class="green darken-1 white-text">green darken-1</div>
+								<div class="green darken-2 white-text">green darken-2</div>
+								<div class="green darken-3 white-text">green darken-3</div>
+								<div class="green darken-4 white-text">green darken-4</div>
+								<div class="green accent-1">green accent-1</div>
+								<div class="green accent-2">green accent-2</div>
+								<div class="green accent-3">green accent-3</div>
+								<div class="green accent-4">green accent-4</div>
+							</div>
+							<div class="col s12 m6 l4">
+								<div class="light-green lighten-5">light-green lighten-5</div>
+								<div class="light-green lighten-4">light-green lighten-4</div>
+								<div class="light-green lighten-3">light-green lighten-3</div>
+								<div class="light-green lighten-2">light-green lighten-2</div>
+								<div class="light-green lighten-1">light-green lighten-1</div>
+								<div class="light-green">light-green</div>
+								<div class="light-green darken-1">light-green darken-1</div>
+								<div class="light-green darken-2 white-text">light-green darken-2</div>
+								<div class="light-green darken-3 white-text">light-green darken-3</div>
+								<div class="light-green darken-4 white-text">light-green darken-4</div>
+								<div class="light-green accent-1">light-green accent-1</div>
+								<div class="light-green accent-2">light-green accent-2</div>
+								<div class="light-green accent-3">light-green accent-3</div>
+								<div class="light-green accent-4">light-green accent-4</div>
+							</div>
+							<div class="col s12 m6 l4">
+								<div class="lime lighten-5">lime lighten-5</div>
+								<div class="lime lighten-4">lime lighten-4</div>
+								<div class="lime lighten-3">lime lighten-3</div>
+								<div class="lime lighten-2">lime lighten-2</div>
+								<div class="lime lighten-1">lime lighten-1</div>
+								<div class="lime">lime</div>
+								<div class="lime darken-1">lime darken-1</div>
+								<div class="lime darken-2">lime darken-2</div>
+								<div class="lime darken-3">lime darken-3</div>
+								<div class="lime darken-4">lime darken-4</div>
+								<div class="lime accent-1">lime accent-1</div>
+								<div class="lime accent-2">lime accent-2</div>
+								<div class="lime accent-3">lime accent-3</div>
+								<div class="lime accent-4 white-text">lime accent-4</div>
+							</div>
+							<div class="col s12 m6 l4">
+								<div class="yellow lighten-5">yellow lighten-5</div>
+								<div class="yellow lighten-4">yellow lighten-4</div>
+								<div class="yellow lighten-3">yellow lighten-3</div>
+								<div class="yellow lighten-2">yellow lighten-2</div>
+								<div class="yellow lighten-1">yellow lighten-1</div>
+								<div class="yellow">yellow</div>
+								<div class="yellow darken-1">yellow darken-1</div>
+								<div class="yellow darken-2">yellow darken-2</div>
+								<div class="yellow darken-3">yellow darken-3</div>
+								<div class="yellow darken-4">yellow darken-4</div>
+								<div class="yellow accent-1">yellow accent-1</div>
+								<div class="yellow accent-2">yellow accent-2</div>
+								<div class="yellow accent-3">yellow accent-3</div>
+								<div class="yellow accent-4">yellow accent-4</div>
+							</div>
+							<div class="col s12 m6 l4">
+								<div class="amber lighten-5">amber lighten-5</div>
+								<div class="amber lighten-4">amber lighten-4</div>
+								<div class="amber lighten-3">amber lighten-3</div>
+								<div class="amber lighten-2">amber lighten-2</div>
+								<div class="amber lighten-1">amber lighten-1</div>
+								<div class="amber">amber</div>
+								<div class="amber darken-1">amber darken-1</div>
+								<div class="amber darken-2">amber darken-2</div>
+								<div class="amber darken-3">amber darken-3</div>
+								<div class="amber darken-4">amber darken-4</div>
+								<div class="amber accent-1">amber accent-1</div>
+								<div class="amber accent-2">amber accent-2</div>
+								<div class="amber accent-3">amber accent-3</div>
+								<div class="amber accent-4">amber accent-4</div>
+							</div>
+							<div class="col s12 m6 l4">
+								<div class="orange lighten-5">orange lighten-5</div>
+								<div class="orange lighten-4">orange lighten-4</div>
+								<div class="orange lighten-3">orange lighten-3</div>
+								<div class="orange lighten-2">orange lighten-2</div>
+								<div class="orange lighten-1">orange lighten-1</div>
+								<div class="orange">orange</div>
+								<div class="orange darken-1">orange darken-1</div>
+								<div class="orange darken-2">orange darken-2</div>
+								<div class="orange darken-3 white-text">orange darken-3</div>
+								<div class="orange darken-4 white-text">orange darken-4</div>
+								<div class="orange accent-1">orange accent-1</div>
+								<div class="orange accent-2">orange accent-2</div>
+								<div class="orange accent-3">orange accent-3</div>
+								<div class="orange accent-4">orange accent-4</div>
+							</div>
+							<div class="col s12 m6 l4">
+								<div class="deep-orange lighten-5">deep-orange lighten-5</div>
+								<div class="deep-orange lighten-4">deep-orange lighten-4</div>
+								<div class="deep-orange lighten-3">deep-orange lighten-3</div>
+								<div class="deep-orange lighten-2">deep-orange lighten-2</div>
+								<div class="deep-orange lighten-1">deep-orange lighten-1</div>
+								<div class="deep-orange white-text">deep-orange</div>
+								<div class="deep-orange darken-1 white-text">deep-orange darken-1</div>
+								<div class="deep-orange darken-2 white-text">deep-orange darken-2</div>
+								<div class="deep-orange darken-3 white-text">deep-orange darken-3</div>
+								<div class="deep-orange darken-4 white-text">deep-orange darken-4</div>
+								<div class="deep-orange accent-1">deep-orange accent-1</div>
+								<div class="deep-orange accent-2">deep-orange accent-2</div>
+								<div class="deep-orange accent-3 white-text white-text">deep-orange accent-3</div>
+								<div class="deep-orange accent-4 white-text">deep-orange accent-4</div>
+							</div>
+							<div class="col s12 m6 l4">
+								<div class="brown lighten-5">brown lighten-5</div>
+								<div class="brown lighten-4">brown lighten-4</div>
+								<div class="brown lighten-3">brown lighten-3</div>
+								<div class="brown lighten-2 white-text">brown lighten-2</div>
+								<div class="brown lighten-1 white-text">brown lighten-1</div>
+								<div class="brown white-text">brown</div>
+								<div class="brown darken-1 white-text">brown darken-1</div>
+								<div class="brown darken-2 white-text">brown darken-2</div>
+								<div class="brown darken-3 white-text">brown darken-3</div>
+								<div class="brown darken-4 white-text">brown darken-4</div>
+							</div>
+							<div class="col s12 m6 l4">
+								<div class="grey lighten-5">grey lighten-5</div>
+								<div class="grey lighten-4">grey lighten-4</div>
+								<div class="grey lighten-3">grey lighten-3</div>
+								<div class="grey lighten-2">grey lighten-2</div>
+								<div class="grey lighten-1">grey lighten-1</div>
+								<div class="grey">grey</div>
+								<div class="grey darken-1 white-text">grey darken-1</div>
+								<div class="grey darken-2 white-text">grey darken-2</div>
+								<div class="grey darken-3 white-text">grey darken-3</div>
+								<div class="grey darken-4 white-text">grey darken-4</div>
+							</div>
+							<div class="col s12 m6 l4">
+								<div class="blue-grey lighten-5">blue-grey lighten-5</div>
+								<div class="blue-grey lighten-4">blue-grey lighten-4</div>
+								<div class="blue-grey lighten-3">blue-grey lighten-3</div>
+								<div class="blue-grey lighten-2">blue-grey lighten-2</div>
+								<div class="blue-grey lighten-1 white-text">blue-grey lighten-1</div>
+								<div class="blue-grey white-text">blue-grey</div>
+								<div class="blue-grey darken-1 white-text">blue-grey darken-1</div>
+								<div class="blue-grey darken-2 white-text">blue-grey darken-2</div>
+								<div class="blue-grey darken-3 white-text">blue-grey darken-3</div>
+								<div class="blue-grey darken-4 white-text">blue-grey darken-4</div>
+							</div>
+							<div class="col s12 m6 l4">
+								<div class="black white-text">black</div>
+								<div class="white">white</div>
+								<div>N/A transparente</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="row center">
+						<div class="col s12 m6">
+							<a class="btn waves-effect waves-light" href="tablas.html">
+								<i class="material-icons left">chevron_left</i>tablas
+							</a>
+						</div>
+						<div class="col s12 m6">
+							<a class="btn waves-effect waves-light" href="tipografia.html">
+								<i class="material-icons right">chevron_right</i>tipografía
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Table of contents -->
+				<div class="col hide-on-small-only m3 l2">
+					<div class="toc-wrapper">
+						<ul class="section table-of-contents">
+							<li><a href="#uso">Uso</a></li>
+							<li><a href="#paleta">Paleta</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer class="page-footer padd-on-large-300">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="footer-text white-text">Matlo.css</h5>
+					<p class="footer-text grey-text text-lighten-4">Matlo.css (Material designed Learning Objects CSS) fue creado - usando Materialize - para el diseño gráfico de Objetos de Aprendizaje, como parte de un Trabajo de Titulación del <a class="footer-link" href="http://www.informatica.usach.cl/">Departamento de Ingeniería Informática</a> de la <a class="footer-link" href="http://www.usach.cl/">Universidad de Santiago de Chile</a>.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<ul>
+						<li><a class="btn github-btn grey lighten-3 black-text" target="_blank" href="https://github.com/David-Hans/Matlo.css">
+							<img class="github-img left" src="../../media/images/GitHub_32_black.png">
+							GitHub
+						</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="https://material.io/">Material Design</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="http://materializecss.com/">Materialize</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="https://github.com/google/code-prettify">Prettify</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© David Hans, 2016.
+				<a class="grey-text text-lighten-4 right" href="#">MIT License</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../../../js/materialize.min.js"></script>
+	<!-- Import prettify -->
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+	<script type="text/javascript" src="../../js/init.js"></script>
+</body>
+</html>

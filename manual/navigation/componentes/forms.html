@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+
+	<!-- Import Google Icon Font -->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Import matlo.css -->
+	<link href="../../../css/matlo.css" rel="stylesheet">
+	<!-- Import prettify.css -->
+	<link href="../../css/prettify.css" rel="stylesheet">
+
+	<link rel="icon" href="../../media/images/favicon-32x32.png" sizes="32x32"/>
+
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+	<meta name="robots" content=""/>
+	<meta name="author" content=""/>
+
+	<!-- Título -->
+	<title>Forms | Matlo.css</title>
+</head>
+
+<body>
+
+	<header class="padd-on-large-300">
+		<!-- Header -->
+		<nav class="top-nav">
+			<div class="container">
+				<div class="nav-wrapper">
+					<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+					<!-- Título -->
+					<a class="page-title brand-logo">Forms</a>
+				</div>
+			</div>
+		</nav>
+		<!-- SideNavBar -->
+		<ul id="slide-out" class="side-nav fixed">
+			<li class="logo">
+				<img src="../../media/images/favicon-100x100.png" alt="Matlo.css">
+			</li>
+			<li><a class="waves-effect" href="../comenzar.html">Comenzar</a></li>
+			<li>
+				<ul class="collapsible">
+					<li>
+						<div class="collapsible-header no-padding"><a class="waves-effect">CSS</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../css/grid.html">Grid</a></li>
+								<li><a class="waves-effect" href="../css/contenido.html">Control de contenido</a></li>
+								<li><a class="waves-effect" href="../css/media.html">Media</a></li>
+								<li><a class="waves-effect" href="../css/sombra.html">Sombra</a></li>
+								<li><a class="waves-effect" href="../css/alertas.html">Alertas</a></li>
+								<li><a class="waves-effect" href="../css/tablas.html">Tablas</a></li>
+								<li><a class="waves-effect" href="../css/colores.html">Colores</a></li>
+								<li><a class="waves-effect" href="../css/tipografia.html">Tipografía</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header active no-padding"><a class="waves-effect">Componentes</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../componentes/botones.html">Botones</a></li>
+								<li><a class="waves-effect" href="../componentes/avance.html">Barras de avance</a></li>
+								<li><a class="waves-effect" href="../componentes/cartas.html">Cartas</a></li>
+								<li><a class="waves-effect" href="../componentes/pie.html">Pie de página</a></li>
+								<li class="active"><a class="waves-effect" href="../componentes/forms.html">Forms</a></li>
+								<li><a class="waves-effect" href="../componentes/iconos.html">Íconos</a></li>
+								<li><a class="waves-effect" href="../componentes/navegacion.html">Barra de navegación</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header no-padding"><a class="waves-effect">JavaScript</a></div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a class="waves-effect" href="../javascript/carrusel.html">Carrusel</a></li>
+								<li><a class="waves-effect" href="../javascript/plegables.html">Plegables</a></li>
+								<li><a class="waves-effect" href="../javascript/tooltips.html">Tooltips</a></li>
+								<li><a class="waves-effect" href="../javascript/dropdown.html">Dropdown</a></li>
+								<li><a class="waves-effect" href="../javascript/media.html">Media</a></li>
+								<li><a class="waves-effect" href="../javascript/modal.html">Modal</a></li>
+								<li><a class="waves-effect" href="../javascript/pushpinscrollspy.html">Pushpin y Scrollspy</a></li>
+								<li><a class="waves-effect" href="../javascript/lateral.html">Barra navegadora lateral</a></li>
+								<li><a class="waves-effect" href="../javascript/waves.html">Waves</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li><a class="waves-effect" href="../recursos.html">Recursos</a></li>
+		</ul>
+		
+	</header>
+
+	<main class="padd-on-large-300">
+		<!-- Content -->
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m9 l10">
+					<p class="caption col s12">Son la forma estándar de recibir datos del usuario.</p>
+
+					<div id="input" class="section scrollspy">
+						<h3 class="header">Input field</h3>
+						<p>Para los campos de texto, debes tener un <code class="prettyprint">input-field</code> <code class="prettyprint">div</code> alrededor de tus <code class="prettyprint">input</code> y <code class="prettyprint">label</code>, así podemos animarlos con JQuery. Esto sólo se aplica a los <code class="prettyprint">input</code> y <code class="prettyprint">textarea</code> de las <code class="prettyprint">form</code>.</p>
+
+						<p>La clase <code class="prettyprint">validate</code> usa validación de HTML5 y agrega la clase <code class="prettyprint">valid</code> o <code class="prettyprint">invalid</code> acordemente. Si no quieres la validación verde o roja, remueve la clase <code class="prettyprint">validate</code> de tus <code class="prettyprint">inputs</code>.</p>
+
+						<div class="row">
+							<form class="col s12">
+								<div class="row">
+									<div class="input-field col s6">
+										<input placeholder="Placeholder" id="first_name" type="text" class="validate">
+										<label for="first_name">Nombre</label>
+									</div>
+
+									<div class="input-field col s6">
+										<input id="last_name" type="text" class="validate">
+										<label for="last_name">Apellido</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="input-field col s12">
+										<input disabled value="No se puede escribir aquí" id="disabled" type="text" class="validate">
+										<label for="disabled">Deshabilitado</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s12">
+										<input id="password" type="password" class="validate">
+										<label for="password">Contraseña</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="input-field col s12">
+										<input id="email" type="email" class="validate">
+										<label for="email">Email</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col s12">
+										Input en linea:
+										<div class="input-field inline">
+											<input id="email" type="email" class="validate">
+											<label for="email" data-error="Ingrese un email válido" data-success="Gracias!">Email</label>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+
+<pre class="prettyprint">&ltdiv class="row">
+    &ltform class="col s12">
+        &ltdiv class="row">
+            &ltdiv class="input-field col s6">
+                &ltinput placeholder="Placeholder" id="first_name" type="text" class="validate">
+                &ltlabel for="first_name">Nombre&lt/label>
+            &lt/div>
+
+            &ltdiv class="input-field col s6">
+                &ltinput id="last_name" type="text" class="validate">
+                &ltlabel for="last_name">Apellido&lt/label>
+            &lt/div>
+        &lt/div>
+
+        &ltdiv class="row">
+            &ltdiv class="input-field col s12">
+                &ltinput disabled value="No se puede escribir aquí" id="disabled" type="text" class="validate">
+                &ltlabel for="disabled">Deshabilitado&lt/label>
+            &lt/div>
+        &lt/div>
+        &ltdiv class="row">
+            &ltdiv class="input-field col s12">
+                &ltinput id="password" type="password" class="validate">
+                &ltlabel for="password">Contraseña&lt/label>
+            &lt/div>
+        &lt/div>
+
+        &ltdiv class="row">
+            &ltdiv class="input-field col s12">
+                &ltinput id="email" type="email" class="validate">
+                &ltlabel for="email">Email&lt/label>
+            &lt/div>
+        &lt/div>
+
+        &ltdiv class="row">
+            &ltdiv class="col s12">
+                Input en línea:
+                &ltdiv class="input-field inline">
+                    &ltinput id="email" type="email" class="validate">
+                    &ltlabel for="email" data-error="Ingrese un email válido" data-success="Gracias!">Email&lt/label>
+                &lt/div>
+            &lt/div>
+        &lt/div>
+    &lt/form>
+&lt/div></pre>
+
+						<p>Nota: Con data <code class="prettyprint">data-error</code> y <code class="prettyprint">data-success</code> puedes agregar mensajes personalizados de validación (como se ve en el <code class="prettyprint">input</code> en línea de Email).</p>
+
+						<br>
+						<h4>Íconos</h4>
+						<p>Puedes agregar íconos a tus <code class="prettyprint">inputs</code>. Sólo tienes que agregar el ícono con la clase <code class="prettyprint">prefix</code>, antes del <code class="prettyprint">input</code> y el <code class="prettyprint">label</code>.</p>
+
+						<div class="row">
+							<form class="col s12">
+								<div class="row">
+									<div class="input-field col s6">
+										<i class="material-icons prefix">account_circle</i>
+										<input id="icon_prefix" type="text" class="validate">
+										<label for="icon_prefix">Nombre</label>
+									</div>
+
+									<div class="input-field col s6">
+										<i class="material-icons prefix">phone</i>
+										<input id="icon_telephone" type="tel" class="validate">
+										<label for="icon_telephone">Teléfono</label>
+									</div>
+								</div>
+							</form>
+						</div>
+
+<pre class="prettyprint">&ltdiv class="row">
+    &ltform class="col s12">
+        &ltdiv class="row">
+            &ltdiv class="input-field col s6">
+                &lti class="material-icons prefix">account_circle&lt/i>
+                &ltinput id="icon_prefix" type="text" class="validate">
+                &ltlabel for="icon_prefix">Nombre&lt/label>
+            &lt/div>
+
+            &ltdiv class="input-field col s6">
+                &lti class="material-icons prefix">phone&lt/i>
+                &ltinput id="icon_telephone" type="tel" class="validate">
+                &ltlabel for="icon_telephone">Teléfono&lt/label>
+            &lt/div>
+        &lt/div>
+    &lt/form>
+&lt/div></pre>
+
+						<p>Más sobre íconos en la sección <a class="waves-effect" href="../componentes/iconos.html">Íconos</a>.</p>
+
+					</div>
+
+					<div id="textarea" class="section scrollspy">
+						<h3 class="header">Textarea</h3>
+						<p>Permiten al usuario el ingreso de texto más grande y ajustable. Debes tener un <code class="prettyprint">input-field</code> <code class="prettyprint">div</code> alrededor de tus <code class="prettyprint">input</code> y <code class="prettyprint">label</code>.</p>
+
+						<p>Las Textareas ajustan su tamaño según el texto que contienen.</p>
+
+						<div class="row">
+							<form class="col s12">
+								<div class="row">
+									<div class="input-field col s12">
+										<textarea id="textarea1" class="materialize-textarea"></textarea>
+										<label for="textarea1">Textarea</label>
+									</div>
+								</div>
+							</form>
+						</div>
+
+<pre class="prettyprint">&ltdiv class="row">
+    &ltform class="col s12">
+        &ltdiv class="row">
+            &ltdiv class="input-field col s12">
+                &lttextarea id="textarea1" class="materialize-textarea">&lt/textarea>
+                &ltlabel for="textarea1">Textarea&lt/label>
+            &lt/div>
+        &lt/div>
+    &lt/form>
+&lt/div></pre>
+
+						<br>
+						<h4>Íconos</h4>
+						<p>También se pueden agregar íconos.</p>
+
+						<div class="row">
+							<form class="col s12">
+								<div class="row">
+									<div class="input-field col s12">
+										<i class="material-icons prefix">mode_edit</i>
+										<textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+										<label for="icon_prefix2">First Name</label>
+									</div>
+								</div>
+							</form>
+						</div>
+
+<pre class="prettyprint">&ltdiv class="row">
+    &ltform class="col s12">
+        &ltdiv class="row">
+            &ltdiv class="input-field col s12">
+                &lti class="material-icons prefix">mode_edit&lt/i>
+                &lttextarea id="icon_prefix2" class="materialize-textarea">&lt/textarea>
+                &ltlabel for="icon_prefix2">First Name&lt/label>
+            &lt/div>
+        &lt/div>
+    &lt/form>
+&lt/div></pre>
+
+					</div>
+
+					<div id="select" class="section scrollspy">
+						<h3 class="header">Select</h3>
+						<p>Debe estar rodeado por un <code class="prettyprint">input-field</code>. Y es un plugin JQuery, así que debe ser inicializado de la siguente forma.</p>
+
+<pre class="prettyprint">$(document).ready(function(){
+    $('select').material_select();
+});</pre>
+
+						<br>
+						<p>Tenemos selects estándar, múltiples (<code class="prettyprint">multiple</code>) y con opciones agrupadas (<code class="prettyprint">optgroup</code>).</p>
+
+						<div class="row">
+							<div class="input-field col s12 m4">
+								<select>
+									<option value="" disabled selected>Elige tu opción</option>
+									<option value="1">Opción 1</option>
+									<option value="2">Opción 2</option>
+									<option value="3">Opción 3</option>
+								</select>
+								<label>Estándar</label>
+							</div>
+
+							<div class="input-field col s12 m4">
+								<select multiple>
+									<option value="" disabled selected>Elige tu opción</option>
+									<option value="1">Opción 1</option>
+									<option value="2">Opción 2</option>
+									<option value="3">Opción 3</option>
+								</select>
+								<label>Múltiple</label>
+							</div>
+
+							<div class="input-field col s12 m4">
+								<select>
+									<option value="" disabled selected>Elige tu opción</option>
+									<optgroup label="team 1">
+										<option value="1">Opción 1</option>
+										<option value="2">Opción 2</option>
+										</optgroup>
+									<optgroup label="team 2">
+										<option value="3">Opción 3</option>
+										<option value="4">Opción 4</option>
+									</optgroup>
+								</select>
+								<label>Grupos</label>
+							</div>
+						</div>
+
+<pre class="prettyprint">&ltdiv class="row">
+    &ltdiv class="input-field col s12 m4">
+        &ltselect>
+            &ltoption value="" disabled selected>Elige tu opción&lt/option>
+            &ltoption value="1">Opción 1&lt/option>
+            &ltoption value="2">Opción 2&lt/option>
+            &ltoption value="3">Opción 3&lt/option>
+        &lt/select>
+        &ltlabel>Estándar&lt/label>
+    &lt/div>
+
+    &ltdiv class="input-field col s12 m4">
+        &ltselect multiple>
+            &ltoption value="" disabled selected>Elige tu opción&lt/option>
+            &ltoption value="1">Opción 1&lt/option>
+            &ltoption value="2">Opción 2&lt/option>
+            &ltoption value="3">Opción 3&lt/option>
+        &lt/select>
+        &ltlabel>Múltiple&lt/label>
+    &lt/div>
+
+    &ltdiv class="input-field col s12 m4">
+        &ltselect>
+            &ltoption value="" disabled selected>Elige tu opción&lt/option>
+            &ltoptgroup label="team 1">
+                &ltoption value="1">Opción 1&lt/option>
+                &ltoption value="2">Opción 2&lt/option>
+                &lt/optgroup>
+            &ltoptgroup label="team 2">
+                &ltoption value="3">Opción 3&lt/option>
+                &ltoption value="4">Opción 4&lt/option>
+            &lt/optgroup>
+        &lt/select>
+        &ltlabel>Grupos&lt/label>
+    &lt/div>
+&lt/div></pre>
+
+
+
+						<br>
+						<h4>Imágenes</h4>
+						<p>Puedes agregar imágenes a tus opciones en cualquier tipo de <code class="prettyprint lang-html">select</code>. En la <code class="prettyprint">option</code> agregas la fuente de la imágen, con el atributo <code class="prettyprint">data-icon</code>. También, puedes agregar las clases <code class="prettyprint">left</code> o <code class="prettyprint">right</code> para alinear los íconos, o <code class="prettyprint">circle</code> para redondearlos.</p>
+
+						<div class="input-field col s12 m6">
+							<select class="icons">
+								<option value="" disabled selected>Elige tu opción</option>
+								<option value="" data-icon="../../media/images/49x49.jpg" class="circle">Ejemplo 1</option>
+								<option value="" data-icon="../../media/images/49x51.jpg" class="circle">Ejemplo 2</option>
+								<option value="" data-icon="../../media/images/49x50.jpg" class="circle">Ejemplo 1</option>
+							</select>
+							<label>Select con imágenes</label>
+						</div>
+
+						<div class="input-field col s12 m6">
+							<select class="icons">
+								<option value="" disabled selected>Elige tu opción</option>
+								<option value="" data-icon="../../media/images/50x49.jpg" class="left circle">Ejemplo 1</option>
+								<option value="" data-icon="../../media/images/51x49.jpg" class="left circle">Ejemplo 2</option>
+								<option value="" data-icon="../../media/images/50x50.jpg" class="left circle">Ejemplo 3</option>
+							</select>
+							<label>Select con imágenes</label>
+						</div>
+
+<pre class="prettyprint">&ltdiv class="input-field col s12 m6">
+    &ltselect class="icons">
+        &ltoption value="" disabled selected>Elige tu opción&lt/option>
+        &ltoption value="" data-icon="https://unsplash.it/49/49.jpg" class="circle">Ejemplo 1&lt/option>
+        &ltoption value="" data-icon="https://unsplash.it/49/51.jpg" class="circle">Ejemplo 2&lt/option>
+        &ltoption value="" data-icon="https://unsplash.it/49/50.jpg" class="circle">Ejemplo 1&lt/option>
+    &lt/select>
+    &ltlabel>Select con imágenes&lt/label>
+&lt/div>
+
+&ltdiv class="input-field col s12 m6">
+    &ltselect class="icons">
+        &ltoption value="" disabled selected>Elige tu opción&lt/option>
+        &ltoption value="" data-icon="https://unsplash.it/50/49.jpg" class="left circle">Ejemplo 1&lt/option>
+        &ltoption value="" data-icon="https://unsplash.it/51/49.jpg" class="left circle">Ejemplo 2&lt/option>
+        &ltoption value="" data-icon="https://unsplash.it/50/50.jpg" class="left circle">Ejemplo 3&lt/option>
+    &lt/select>
+    &ltlabel>Select con imágenes&lt/label>
+&lt/div></pre>
+
+						<br>
+						<h4>Deshabilitado</h4>
+						<p>Puedes agregar <code class="prettyprint">disabled</code> al elemento <code class="prettyprint">select</code> para deshabilitarlo completamente.</p>
+
+						<label>Select Deshabilitado</label>
+						<select disabled>
+							<option value="" disabled selected>Elige tu opción</option>
+							<option value="1">Opción 1</option>
+							<option value="2">Opción 2</option>
+							<option value="3">Opción 3</option>
+						</select>
+
+<pre class="prettyprint">&ltlabel>Select Deshabilitado&lt/label>
+&ltselect disabled>
+    &ltoption value="" disabled selected>Elige tu opción&lt/option>
+    &ltoption value="1">Opción 1&lt/option>
+    &ltoption value="2">Opción 2&lt/option>
+    &ltoption value="3">Opción 3&lt/option>
+&lt/select></pre>
+
+					</div>
+
+					<div id="radio" class="section scrollspy">
+						<h3 class="header">Radio Buttons</h3>
+						<p>Para agregar, tienes que tener el mismo atributo <code class="prettyprint">name</code> para cada botón en el grupo. Se puede usar el atributo <code class="prettyprint">disabled</code>.</p>
+
+						<form action="#">
+							<p>
+								<input name="group1" type="radio" id="test1" />
+								<label for="test1">Opción 1</label>
+							</p>
+							<p>
+								<input name="group1" type="radio" id="test2" />
+								<label for="test2">Opción 2</label>
+							</p>
+							<p>
+								<input class="with-gap" name="group1" type="radio" id="test3"  />
+								<label for="test3">Opción 3</label>
+							</p>
+							<p>
+								<input name="group1" type="radio" id="test4" disabled="disabled" />
+								<label for="test4">Opción 4</label>
+							</p>
+						</form>
+
+<pre class="prettyprint">&ltform action="#">
+    &ltp>
+        &ltinput name="group1" type="radio" id="test1" />
+        &ltlabel for="test1">Opción 1&lt/label>
+    &lt/p>
+    &ltp>
+        &ltinput name="group1" type="radio" id="test2" />
+        &ltlabel for="test2">Opción 2&lt/label>
+    &lt/p>
+    &ltp>
+        &ltinput class="with-gap" name="group1" type="radio" id="test3"  />
+        &ltlabel for="test3">Opción 3&lt/label>
+    &lt/p>
+    &ltp>
+        &ltinput name="group1" type="radio" id="test4" disabled="disabled" />
+        &ltlabel for="test4">Opción 4&lt/label>
+    &lt/p>
+&lt/form></pre>
+
+						<p>Puedes crear radio buttons con borde interior, usando la clase <code class="prettyprint lang-html">with-gap</code> (como la opción 3, del ejemplo anterior).</p>
+
+					</div>
+
+					<div id="checkboxes" class="section scrollspy">
+						<h3 class="header">Checkboxes</h3>
+
+						<form action="#">
+							<p>
+								<input type="checkbox" id="test5" />
+								<label for="test5">Básico</label>
+							</p>
+							<p>
+								<input type="checkbox" id="test6" checked="checked" />
+								<label for="test6">Checked</label>
+							</p>
+							<p>
+								<input type="checkbox" class="filled-in" id="filled-in-box"/>
+								<label for="filled-in-box">Filled in</label>
+							</p>
+							<p>
+								<input type="checkbox" id="test7" disabled="disabled" />
+								<label for="test7">Disabled</label>
+							</p>
+							<p>
+								<input type="checkbox" id="test8" checked="checked" disabled="disabled" />
+								<label for="test8">Disabled y checked</label>
+							</p>
+						</form>
+
+<pre class="prettyprint">&ltform action="#">
+    &ltp>
+        &ltinput type="checkbox" id="test5" />
+        &ltlabel for="test5">Básico&lt/label>
+    &lt/p>
+    &ltp>
+        &ltinput type="checkbox" id="test6" checked="checked" />
+        &ltlabel for="test6">Checked&lt/label>
+    &lt/p>
+    &ltp>
+        &ltinput type="checkbox" class="filled-in" id="filled-in-box"/>
+        &ltlabel for="filled-in-box">Filled in&lt/label>
+    &lt/p>
+    &ltp>
+        &ltinput type="checkbox" id="test7" disabled="disabled" />
+        &ltlabel for="test7">Disabled&lt/label>
+    &lt/p>
+    &ltp>
+        &ltinput type="checkbox" id="test8" checked="checked" disabled="disabled" />
+        &ltlabel for="test8">Disabled y checked&lt/label>
+    &lt/p>
+&lt/form></pre>
+
+					</div>
+
+					<div id="switches" class="section scrollspy">
+						<h3 class="header">Switches</h3>
+
+						<div class="switch">
+							<label>
+								Off
+								<input type="checkbox">
+								<span class="lever"></span>
+								On
+							</label>
+						</div>
+						<br>
+						<div class="switch">
+							<label>
+								Off
+								<input disabled type="checkbox">
+								<span class="lever"></span>
+								On
+							</label>
+						</div>
+
+<pre class="prettyprint">&ltdiv class="switch">
+    &ltlabel>
+        Off
+        &ltinput type="checkbox">
+        &ltspan class="lever">&lt/span>
+        On
+    &lt/label>
+&lt/div>
+
+&ltdiv class="switch">
+    &ltlabel>
+        Off
+        &ltinput disabled type="checkbox">
+        &ltspan class="lever">&lt/span>
+        On
+    &lt/label>
+&lt/div></pre>
+
+					</div>
+
+					<div id="rango" class="section scrollspy">
+						<h3 class="header">Rango</h3>
+
+						<form action="#">
+							<p class="range-field">
+								<input type="range" id="test5" min="0" max="100" />
+							</p>
+						</form>
+
+<pre class="prettyprint">&ltform action="#">
+    &ltp class="range-field">
+        &ltinput type="range" id="test5" min="0" max="100" />
+    &lt/p>
+&lt/form></pre>
+
+					</div>
+
+					<div class="row center">
+						<div class="col s12 m6">
+							<a class="btn waves-effect waves-light" href="pie.html">
+								<i class="material-icons left">chevron_left</i>pie de página
+							</a>
+						</div>
+						<div class="col s12 m6">
+							<a class="btn waves-effect waves-light" href="iconos.html">
+								<i class="material-icons right">chevron_right</i>íconos
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Table of contents -->
+				<div class="col hide-on-small-only m3 l2">
+					<div class="toc-wrapper">
+						<ul class="section table-of-contents">
+							<li><a href="#input">Input field</a></li>
+							<li><a href="#textarea">Textarea</a></li>
+							<li><a href="#select">Select</a></li>
+							<li><a href="#radio">Radio Buttons</a></li>
+							<li><a href="#checkboxes">Checkboxes</a></li>
+							<li><a href="#switches">Switches</a></li>
+							<li><a href="#rango">Rango</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer class="page-footer padd-on-large-300">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="footer-text white-text">Matlo.css</h5>
+					<p class="footer-text grey-text text-lighten-4">Matlo.css (Material designed Learning Objects CSS) fue creado - usando Materialize - para el diseño gráfico de Objetos de Aprendizaje, como parte de un Trabajo de Titulación del <a class="footer-link" href="http://www.informatica.usach.cl/">Departamento de Ingeniería Informática</a> de la <a class="footer-link" href="http://www.usach.cl/">Universidad de Santiago de Chile</a>.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<ul>
+						<li><a class="btn github-btn grey lighten-3 black-text" target="_blank" href="https://github.com/David-Hans/Matlo.css">
+							<img class="github-img left" src="../../media/images/GitHub_32_black.png">
+							GitHub
+						</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="https://material.io/">Material Design</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="http://materializecss.com/">Materialize</a></li>
+						<li><a class="grey-text text-lighten-3" target="_blank" href="https://github.com/google/code-prettify">Prettify</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© David Hans, 2016.
+				<a class="grey-text text-lighten-4 right" href="#">MIT License</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../../../js/materialize.min.js"></script>
+	<!-- Import prettify -->
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+	<script type="text/javascript" src="../../js/init.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('select').material_select();
+		});
+	</script>
+</body>
+</html>
