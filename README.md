@@ -1,7 +1,6 @@
 # Matlo.css
 Framework CSS para el diseño gráfico de objetos de aprendizaje.
 
-## Desarrollo
 Creado siguiendo los principios de diseño de [Material Design](https://material.io/) y desarrollado usando [Materialize](https://github.com/Dogfalo/materialize).
 
 ## Recursos
